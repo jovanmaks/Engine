@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++   -I../Hazel/src  -g   -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++   -I../Hazel/src  -g   -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
+  "file": "/home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp"
+}
+]

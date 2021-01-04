@@ -1,0 +1,98 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17.4"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Hazel",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Hazel",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Sandbox",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.17.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Sandbox",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "Arabesque",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Hazel::@c312927d72e11e7b372f",
+					"jsonFile" : "target-Hazel-Debug-12500e1b946436db2be7.json",
+					"name" : "Hazel",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "SandboxApp::@df4fa095c2a3dbacf8fe",
+					"jsonFile" : "target-SandboxApp-Debug-c6aaacb78530f074f7f0.json",
+					"name" : "SandboxApp",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/demijan/Projects/Engine/build",
+		"source" : "/home/demijan/Projects/Engine"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

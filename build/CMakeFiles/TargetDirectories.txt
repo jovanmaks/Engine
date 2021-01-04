@@ -1,0 +1,8 @@
+/home/demijan/Projects/Engine/build/CMakeFiles/rebuild_cache.dir
+/home/demijan/Projects/Engine/build/CMakeFiles/edit_cache.dir
+/home/demijan/Projects/Engine/build/Hazel/CMakeFiles/rebuild_cache.dir
+/home/demijan/Projects/Engine/build/Hazel/CMakeFiles/edit_cache.dir
+/home/demijan/Projects/Engine/build/Hazel/CMakeFiles/Hazel.dir
+/home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/rebuild_cache.dir
+/home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/edit_cache.dir
+/home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/SandboxApp.dir
