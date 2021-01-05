@@ -1,5 +1,8 @@
 add_library(
     Hazel
+    src/hzpch.h
+    src/hzpch.cpp
+
     
     src/Hazel/Application.h
     src/Hazel/Application.cpp
@@ -11,10 +14,13 @@ add_library(
     
     src/Hazel.h
 
+
     src/Hazel/Events/ApplicationEvent.h
     src/Hazel/Events/Event.h
     src/Hazel/Events/KeyEvent.h
     src/Hazel/Events/MouseEvent.h
+
+
 
     )
 

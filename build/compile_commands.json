@@ -1,6 +1,12 @@
 [
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include  -g   -o Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/hzpch.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/hzpch.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include  -g   -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp"
 },
