@@ -1,13 +1,61 @@
 [
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src  -g   -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include  -g   -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src  -g   -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include  -g   -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Log.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Log.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/spdlog.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/spdlog.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/stdout_sinks.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/stdout_sinks.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/color_sinks.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/color_sinks.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/file_sinks.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/file_sinks.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/async.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/async.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/cfg.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/cfg.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/fmt.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/fmt.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include  -g   -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp"
 }
 ]
