@@ -2,14 +2,22 @@
 #include "Application.h"
 
 
-#include "Events/ApplicationEvent.h"
 #include "Log.h"
+
+// #include "../../vendor/GLFW/glfw3.h"
+// #include "../../vendor/GLFW/include/GLFW/glfw3.h"
+// #include <GL/glew.h>
+#include "GLFW/glfw3.h"
+
 
 namespace Hazel {
 
+#define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
+
     Application::Application()
     {
-
+        m_Window = std::unique_ptr<Window>(Window::Create());
+        m_Window ->SetEventCallback(BIND_EVENT_FN(OnEvent));
     }
 
     Application::~Application()
@@ -17,21 +25,35 @@ namespace Hazel {
 
     }
 
+    void Application::OnEvent(Event &e)
+    {
+        EventDispatcher dispatcher(e);
+        dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClosed));
+
+        HZ_CORE_TRACE("{0}",e);
+    }
+
+    
+  
+
     void Application::Run()
     {
-        WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
-		{
-			HZ_TRACE(e);
-		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			HZ_TRACE(e);
-		}
+   
+        glClearColor(1,0,1,1);
+        glClear(GL_COLOR_BUFFER_BIT);
 
 
+        while(m_Running)
+        {
+            m_Window->OnUpdate();
+        }
+    }
 
-        while(true);
+    bool Application::OnWindowClosed(WindowCloseEvent& e)
+    {
+        m_Running = false;
+        return true;
+        
     }
 
 
