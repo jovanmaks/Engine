@@ -12,10 +12,20 @@ set( GLFWM_VERSION_MINOR "2" )
 find_package( OpenGL REQUIRED )
 find_package( glfw3 REQUIRED )
 
+add_compile_definitions(GLFW_INCLUDE_NONE)
+# target_compile_definitions( Arabesque PRIVATE "GLFW_INCLUDE_NONE")
 
 add_subdirectory( Hazel )
 add_subdirectory( Hazel/vendor/spdlog )
+
+add_subdirectory( Hazel/vendor/glad )
+# target_link_libraries(Hazel PRIVATE glad)
+
+
+
+
 add_subdirectory( Sandbox )
+
 
 
 # target_link_libraries( Arabesque ${../lib} GL )

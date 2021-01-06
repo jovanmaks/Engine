@@ -7,7 +7,9 @@
 // #include "../../vendor/GLFW/glfw3.h"
 // #include "../../vendor/GLFW/include/GLFW/glfw3.h"
 // #include <GL/glew.h>
-#include "GLFW/glfw3.h"
+// #include "GLFW/glfw3.h"
+#include "../../vendor/glad/include/glad/glad.h"
+
 
 
 namespace Hazel {
@@ -62,7 +64,7 @@ namespace Hazel {
 
         while(m_Running)
         {
-             glClearColor(1,0,1,1);
+            glClearColor(1,0,1,1);
             glClear(GL_COLOR_BUFFER_BIT);
             
             for (Layer* layer : m_LayerStack)

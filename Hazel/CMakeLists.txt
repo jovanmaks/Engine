@@ -18,6 +18,9 @@ add_library(
     src/Hazel/LayerStack.h
     src/Hazel/LayerStack.cpp
 
+    vendor/glad/include/glad/glad.h
+    # vendor/glad/include/KHR/khrplatform.h
+    # vendor/glad/src/glad.c
 
     
     
@@ -37,7 +40,11 @@ add_library(
     )
 
 
-target_link_libraries(Hazel PUBLIC spdlog::spdlog)
+add_compile_definitions(GLFW_INCLUDE_NONE)
+target_link_libraries( Hazel PUBLIC spdlog::spdlog)
+target_link_libraries( Hazel PUBLIC glad )
+
+
 target_link_libraries( Hazel PUBLIC glfw )
 target_link_libraries( Hazel PUBLIC GL )
 

@@ -92,53 +92,53 @@ build Hazel/edit_cache: phony Hazel/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for Hazel
 
-build cmake_object_order_depends_target_Hazel: phony || cmake_object_order_depends_target_spdlog
+build cmake_object_order_depends_target_Hazel: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_spdlog
 
 build Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/hzpch.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Application.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Log.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Layer.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/LayerStack.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/Windows/WindowsWindow.cpp || cmake_object_order_depends_target_Hazel
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows
 
@@ -150,7 +150,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_C
 #############################################
 # Link the static library Hazel/libHazel.a
 
-build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o || Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
+build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o || Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :
@@ -196,7 +196,7 @@ build Hazel/vendor/spdlog/rebuild_cache: phony Hazel/vendor/spdlog/CMakeFiles/re
 build cmake_object_order_depends_target_spdlog: phony || Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/spdlog.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -204,7 +204,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -212,7 +212,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMP
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -220,7 +220,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPI
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -228,7 +228,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPIL
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -236,7 +236,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__s
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -244,7 +244,7 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spd
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/fmt.cpp || cmake_object_order_depends_target_spdlog
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o.d
   FLAGS = -g   -std=c++11
   INCLUDES = -I../Hazel/vendor/spdlog/include
@@ -266,6 +266,67 @@ build Hazel/vendor/spdlog/libspdlogd.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Debug 
   PRE_LINK = :
   TARGET_FILE = Hazel/vendor/spdlog/libspdlogd.a
   TARGET_PDB = spdlog.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/demijan/Projects/Engine/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Hazel/vendor/glad/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glad && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Hazel/vendor/glad/rebuild_cache: phony Hazel/vendor/glad/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Hazel/vendor/glad/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glad && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Hazel/vendor/glad/edit_cache: phony Hazel/vendor/glad/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Order-only phony target for glad
+
+build cmake_object_order_depends_target_glad: phony || Hazel/vendor/glad/CMakeFiles/glad.dir
+
+build Hazel/vendor/glad/CMakeFiles/glad.dir/src/glad.c.o: C_COMPILER__glad_Debug ../Hazel/vendor/glad/src/glad.c || cmake_object_order_depends_target_glad
+  DEFINES = -DGLFW_INCLUDE_NONE
+  DEP_FILE = Hazel/vendor/glad/CMakeFiles/glad.dir/src/glad.c.o.d
+  FLAGS = -g
+  INCLUDES = -I../Hazel/vendor/glad/include
+  OBJECT_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir
+  OBJECT_FILE_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target glad
+
+
+#############################################
+# Link the static library Hazel/vendor/glad/libglad.a
+
+build Hazel/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug Hazel/vendor/glad/CMakeFiles/glad.dir/src/glad.c.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Hazel/vendor/glad/libglad.a
+  TARGET_PDB = glad.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -302,13 +363,13 @@ build Sandbox/edit_cache: phony Sandbox/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for SandboxApp
 
-build cmake_object_order_depends_target_SandboxApp: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_spdlog
+build cmake_object_order_depends_target_SandboxApp: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_glad cmake_object_order_depends_target_spdlog
 
 build Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o: CXX_COMPILER__SandboxApp_Debug ../Sandbox/src/SandboxApp.cpp || cmake_object_order_depends_target_SandboxApp
-  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
 
@@ -320,9 +381,9 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o: CXX_COMPILER__Sand
 #############################################
 # Link the executable Sandbox/SandboxApp
 
-build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3 || Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a
+build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/glad/libglad.a /usr/lib64/libglfw.so.3.3 || Hazel/libHazel.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a
   FLAGS = -g
-  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  /usr/lib64/libglfw.so.3.3  -lGL
+  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  Hazel/vendor/glad/libglad.a  /usr/lib64/libglfw.so.3.3  -lGL  -ldl
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -336,7 +397,11 @@ build Hazel: phony Hazel/libHazel.a
 
 build SandboxApp: phony Sandbox/SandboxApp
 
+build glad: phony Hazel/vendor/glad/libglad.a
+
 build libHazel.a: phony Hazel/libHazel.a
+
+build libglad.a: phony Hazel/vendor/glad/libglad.a
 
 build libspdlogd.a: phony Hazel/vendor/spdlog/libspdlogd.a
 
@@ -350,7 +415,7 @@ build spdlog: phony Hazel/vendor/spdlog/libspdlogd.a
 #############################################
 # Folder: /home/demijan/Projects/Engine/build
 
-build all: phony Hazel/all Hazel/vendor/spdlog/all Sandbox/all
+build all: phony Hazel/all Hazel/vendor/spdlog/all Hazel/vendor/glad/all Sandbox/all
 
 # =============================================================================
 
@@ -358,6 +423,13 @@ build all: phony Hazel/all Hazel/vendor/spdlog/all Sandbox/all
 # Folder: /home/demijan/Projects/Engine/build/Hazel
 
 build Hazel/all: phony Hazel/libHazel.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/glad
+
+build Hazel/vendor/glad/all: phony Hazel/vendor/glad/libglad.a
 
 # =============================================================================
 
@@ -380,14 +452,14 @@ build Sandbox/all: phony Sandbox/SandboxApp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
 
 
 #############################################
