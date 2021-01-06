@@ -13,7 +13,12 @@ add_library(
     src/Hazel/Window.h
 
     
-    
+    src/Hazel/Layer.h
+    src/Hazel/Layer.cpp
+    src/Hazel/LayerStack.h
+    src/Hazel/LayerStack.cpp
+
+
     
     
     src/Hazel.h

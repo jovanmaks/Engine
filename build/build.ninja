@@ -118,6 +118,22 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o: CXX_COMPILER__Hazel_Debug 
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
+build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Layer.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
+
+build Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/LayerStack.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
+
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/Windows/WindowsWindow.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o.d
@@ -134,7 +150,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_C
 #############################################
 # Link the static library Hazel/libHazel.a
 
-build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o || Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
+build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o || Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :
