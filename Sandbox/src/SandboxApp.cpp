@@ -30,6 +30,7 @@ public:
     {
 
         PushLayer(new ExampleLayer());
+		PushOverlay(new Hazel::ImGuiLayer());
 
     }
 

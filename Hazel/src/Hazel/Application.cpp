@@ -1,23 +1,25 @@
 #include "../hzpch.h"
-#include "Application.h"
+#include "Hazel/Application.h"
 
 
-#include "Log.h"
+#include "Hazel/Log.h"
 
-// #include "../../vendor/GLFW/glfw3.h"
-// #include "../../vendor/GLFW/include/GLFW/glfw3.h"
-// #include <GL/glew.h>
-// #include "GLFW/glfw3.h"
-#include "../../vendor/glad/include/glad/glad.h"
 
+#include <glad/glad.h>
 
 
 namespace Hazel {
 
 #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
+    Application* Application::s_Instance = nullptr;
+
+
     Application::Application()
     {
+        HZ_CORE_ASSERT(!s_Instance, "Application already exists!");
+		s_Instance = this;
+
         m_Window = std::unique_ptr<Window>(Window::Create());
         m_Window ->SetEventCallback(BIND_EVENT_FN(OnEvent));
     }
@@ -30,11 +32,13 @@ namespace Hazel {
     void Application::PushLayer(Layer* layer)
 	{
 		m_LayerStack.PushLayer(layer);
+        layer->OnAttach();
 	}
 
 	void Application::PushOverlay(Layer* layer)
 	{
 		m_LayerStack.PushOverlay(layer);
+        layer->OnAttach();
 	}
 
 
