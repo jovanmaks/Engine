@@ -34,3 +34,7 @@
 2	745	1610092440007364954	Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o	ce21f84571f2e68c
 745	784	1610092440046364869	Hazel/libHazel.a	40ec7402779b7748
 784	1251	1610092440510363866	Sandbox/SandboxApp	9a387787c95cb39b
+2	973	1610093356544688659	Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o	75eb38ed3c827b80
+1	1635	1610093357205687610	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o	c7d108f2a6c3eba3
+1635	1681	1610093357251687537	Hazel/libHazel.a	40ec7402779b7748
+1681	2147	1610093357715686801	Sandbox/SandboxApp	9a387787c95cb39b
