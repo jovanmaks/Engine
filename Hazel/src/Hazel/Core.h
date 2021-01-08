@@ -1,6 +1,8 @@
 #pragma once    
 
-
+#ifdef HZ_DEBUG
+	#define HZ_ENABLE_ASSERTS
+#endif
 
 #ifdef HZ_ENABLE_ASSERTS
 	#define HZ_ASSERT(x, ...) { if(!(x)) { HZ_ERROR("Assertion Failed: {0}", __VA_ARGS__); raise(SIGTRAP); } }
@@ -9,6 +11,7 @@
 	#define HZ_ASSERT(x, ...)
 	#define HZ_CORE_ASSERT(x, ...)
 #endif
+
 
 
 

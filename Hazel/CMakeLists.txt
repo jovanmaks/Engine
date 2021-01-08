@@ -4,6 +4,8 @@ add_library(
     src/hzpch.cpp
 
     src/Platform/Windows/WindowsWindow.cpp
+    src/Platform/Windows/WindowsInput.cpp
+
     
     src/Hazel/ImGui/ImGuiLayer.cpp
     src/Hazel/Application.cpp

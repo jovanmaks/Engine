@@ -13,6 +13,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp"
 },
