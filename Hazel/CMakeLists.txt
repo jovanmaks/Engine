@@ -19,7 +19,7 @@ add_library(
 
     src/Platform/OpenGL/OpenGLContext.cpp
     
-
+    src/Hazel/Renderer/Shader.cpp
     )
 
 add_compile_definitions(GLFW_INCLUDE_NONE)
