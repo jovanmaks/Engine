@@ -77,14 +77,10 @@
 #endif
 
 #include "hzpch.h"
-// #include "imgui.h"
-// #include "../../../vendor/imgui/imgui.h"
 
 #include "ImGuiOpenGLRenderer.h"
 
-// #include <GLFW/glfw3.h>
-// #include <GL/glew.h>
-// #include <GL/gl.h>
+
 #include <glad/glad.h>   
 
 #include <stdio.h>

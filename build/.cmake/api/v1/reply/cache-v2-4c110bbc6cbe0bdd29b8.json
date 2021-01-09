@@ -1071,7 +1071,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "6"
+			"value" : "8"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -1920,6 +1920,30 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/lib64/cmake/glfw3"
+		},
+		{
+			"name" : "glm_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/demijan/Projects/Engine/build/Hazel/vendor/glm"
+		},
+		{
+			"name" : "glm_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/demijan/Projects/Engine/Hazel/vendor/glm"
 		},
 		{
 			"name" : "spdlog_BINARY_DIR",

@@ -218,6 +218,12 @@
 			"path" : "Hazel/vendor/glad/CMakeLists.txt"
 		},
 		{
+			"path" : "Hazel/vendor/glm/CMakeLists.txt"
+		},
+		{
+			"path" : "Hazel/vendor/glm/glm/CMakeLists.txt"
+		},
+		{
 			"path" : "Hazel/src/Platform/OpenGL/CMakeLists.txt"
 		},
 		{

@@ -3,14 +3,17 @@
 add_library(
     imgui
    
-    imgui.cpp
-    imgui.h
-    ImGuiOpenGLRenderer.cpp
-    imgui_impl_glfw.cpp
-    imgui_demo.cpp
-    imgui_draw.cpp
-    imgui_widgets.cpp
-    imgui_tables.cpp
+    # morao si da odes u submodul jer na docking grani ima nekih izmjena i u ostalim fajlovima koji uticu
+
+    ../../../vendor/ImGUI/backends/imgui_impl_glfw.cpp
+    ../../../vendor/ImGUI/backends/imgui_impl_opengl3.cpp
+
+    ../../../vendor/ImGUI/imgui.cpp
+    ../../../vendor/ImGUI/imgui_demo.cpp
+    ../../../vendor/ImGUI/imgui_draw.cpp
+    ../../../vendor/ImGUI/imgui_widgets.cpp
+    ../../../vendor/ImGUI/imgui_tables.cpp
+
 
     )
 

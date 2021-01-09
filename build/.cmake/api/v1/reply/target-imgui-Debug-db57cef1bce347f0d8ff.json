@@ -43,7 +43,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 17,
+				"line" : 20,
 				"parent" : 0
 			}
 		]
@@ -72,12 +72,12 @@
 			"sourceIndexes" : 
 			[
 				0,
+				1,
 				2,
 				3,
 				4,
 				5,
-				6,
-				7
+				6
 			]
 		}
 	],
@@ -96,19 +96,12 @@
 			"sourceIndexes" : 
 			[
 				0,
+				1,
 				2,
 				3,
 				4,
 				5,
-				6,
-				7
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				1
+				6
 			]
 		}
 	],
@@ -117,48 +110,43 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Hazel/src/Platform/OpenGL/imgui.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp",
+			"path" : "Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui_impl_glfw.cpp",
+			"path" : "Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui_demo.cpp",
+			"path" : "Hazel/vendor/ImGUI/imgui.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui_draw.cpp",
+			"path" : "Hazel/vendor/ImGUI/imgui_demo.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui_widgets.cpp",
+			"path" : "Hazel/vendor/ImGUI/imgui_draw.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Hazel/src/Platform/OpenGL/imgui_tables.cpp",
+			"path" : "Hazel/vendor/ImGUI/imgui_widgets.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Hazel/vendor/ImGUI/imgui_tables.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

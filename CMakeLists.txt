@@ -18,9 +18,14 @@ add_compile_options(-fPIC)
 add_subdirectory( Hazel )
 add_subdirectory( Hazel/vendor/spdlog )
 add_subdirectory( Hazel/vendor/glad )
+add_subdirectory( Hazel/vendor/glm )
+
+
 
 #imgui
 add_subdirectory( Hazel/src/Platform/OpenGL )
+# add_subdirectory( Hazel/vendor/ImGui )
+
 
 
 add_subdirectory( Sandbox )

@@ -126,6 +126,14 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o: CXX_COMPILER_
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
 
+build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/ImGui/ImGuiBuild.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
+
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Application.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o.d
@@ -158,6 +166,14 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o: CXX_COMPILER__Hazel
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel
 
+build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLContext.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target Hazel
@@ -166,7 +182,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o: CXX_COMPILER__Hazel
 #############################################
 # Link the static library Hazel/libHazel.a
 
-build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o || Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
+build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o || Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :
@@ -352,6 +368,62 @@ build Hazel/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug Hazel/ven
 #############################################
 # Utility command for rebuild_cache
 
+build Hazel/vendor/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glm && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Hazel/vendor/glm/rebuild_cache: phony Hazel/vendor/glm/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Hazel/vendor/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glm && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Hazel/vendor/glm/edit_cache: phony Hazel/vendor/glm/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/demijan/Projects/Engine/Hazel/vendor/glm/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Hazel/vendor/glm/glm/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glm/glm && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Hazel/vendor/glm/glm/rebuild_cache: phony Hazel/vendor/glm/glm/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build Hazel/vendor/glm/glm/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/glm/glm && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Hazel/vendor/glm/glm/edit_cache: phony Hazel/vendor/glm/glm/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/demijan/Projects/Engine/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
 build Hazel/src/Platform/OpenGL/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/src/Platform/OpenGL && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
   DESC = Running CMake to regenerate build system...
@@ -380,54 +452,54 @@ build Hazel/src/Platform/OpenGL/edit_cache: phony Hazel/src/Platform/OpenGL/CMak
 
 build cmake_object_order_depends_target_imgui: phony || Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/ImGuiOpenGLRenderer.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/ImGuiOpenGLRenderer.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui_impl_glfw.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_demo.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui_demo.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_demo.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_demo.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_draw.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui_draw.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_draw.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_draw.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_widgets.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
 
-build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_tables.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/src/Platform/OpenGL/imgui_tables.cpp || cmake_object_order_depends_target_imgui
-  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_tables.cpp.o.d
+build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_tables.cpp || cmake_object_order_depends_target_imgui
+  DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o.d
   FLAGS = -g   -fPIC
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
-  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
+  OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
 
 
 # =============================================================================
@@ -437,7 +509,7 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_tables.cpp.o: CXX_COM
 #############################################
 # Link the static library Hazel/src/Platform/OpenGL/libimgui.a
 
-build Hazel/src/Platform/OpenGL/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/ImGuiOpenGLRenderer.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_demo.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_draw.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_widgets.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_tables.cpp.o
+build Hazel/src/Platform/OpenGL/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   POST_BUILD = :
@@ -536,7 +608,7 @@ build spdlog: phony Hazel/vendor/spdlog/libspdlogd.a
 #############################################
 # Folder: /home/demijan/Projects/Engine/build
 
-build all: phony Hazel/all Hazel/vendor/spdlog/all Hazel/vendor/glad/all Hazel/src/Platform/OpenGL/all Sandbox/all
+build all: phony Hazel/all Hazel/vendor/spdlog/all Hazel/vendor/glad/all Hazel/vendor/glm/all Hazel/src/Platform/OpenGL/all Sandbox/all
 
 # =============================================================================
 
@@ -562,6 +634,20 @@ build Hazel/vendor/glad/all: phony Hazel/vendor/glad/libglad.a
 # =============================================================================
 
 #############################################
+# Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/glm
+
+build Hazel/vendor/glm/all: phony Hazel/vendor/glm/glm/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/glm/glm
+
+build Hazel/vendor/glm/glm/all: phony
+
+# =============================================================================
+
+#############################################
 # Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/spdlog
 
 build Hazel/vendor/spdlog/all: phony Hazel/vendor/spdlog/libspdlogd.a
@@ -580,14 +666,14 @@ build Sandbox/all: phony Sandbox/SandboxApp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
 
 
 #############################################

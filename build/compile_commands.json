@@ -25,6 +25,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp"
 },
@@ -45,6 +51,12 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/LayerStack.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/LayerStack.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp"
 },
 
 {
@@ -97,44 +109,44 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/ImGuiOpenGLRenderer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/ImGuiOpenGLRenderer.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_impl_glfw.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_impl_glfw.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_impl_glfw.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_demo.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_demo.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_demo.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_draw.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_draw.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_draw.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_widgets.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_widgets.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_widgets.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui_tables.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_tables.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/imgui_tables.cpp"
+  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp"
 },
 
 {
