@@ -19,12 +19,17 @@ add_library(
 
     src/Platform/OpenGL/OpenGLContext.cpp
     src/Platform/OpenGL/OpenGLBuffer.cpp
+    src/Platform/OpenGL/OpenGLVertexArray.cpp
+
+    
 
     
     src/Hazel/Renderer/Shader.cpp
     src/Hazel/Renderer/Buffer.cpp
     src/Hazel/Renderer/Renderer.cpp
+    src/Hazel/Renderer/VertexArray.cpp
 
+    
 
     )
 
