@@ -115,6 +115,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/vendor/spdlog/include  -g   -fPIC -std=c++11 -o Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/spdlog.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/vendor/spdlog/src/spdlog.cpp"
 },

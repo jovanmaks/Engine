@@ -30,7 +30,7 @@ add_library(
     src/Hazel/Renderer/VertexArray.cpp
     src/Hazel/Renderer/RenderCommand.cpp
     src/Hazel/Renderer/RendererAPI.cpp
-
+    src/Hazel/Renderer/OrthographicCamera.cpp
     
 
     )
