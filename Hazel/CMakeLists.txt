@@ -18,8 +18,14 @@ add_library(
     src/Hazel/LayerStack.cpp
 
     src/Platform/OpenGL/OpenGLContext.cpp
+    src/Platform/OpenGL/OpenGLBuffer.cpp
+
     
     src/Hazel/Renderer/Shader.cpp
+    src/Hazel/Renderer/Buffer.cpp
+    src/Hazel/Renderer/Renderer.cpp
+
+
     )
 
 add_compile_definitions(GLFW_INCLUDE_NONE)
