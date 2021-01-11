@@ -20,7 +20,7 @@ add_library(
     src/Platform/OpenGL/OpenGLContext.cpp
     src/Platform/OpenGL/OpenGLBuffer.cpp
     src/Platform/OpenGL/OpenGLVertexArray.cpp
-
+    src/Platform/OpenGL/OpenGLRendererAPI.cpp
     
 
     
@@ -28,6 +28,8 @@ add_library(
     src/Hazel/Renderer/Buffer.cpp
     src/Hazel/Renderer/Renderer.cpp
     src/Hazel/Renderer/VertexArray.cpp
+    src/Hazel/Renderer/RenderCommand.cpp
+    src/Hazel/Renderer/RendererAPI.cpp
 
     
 

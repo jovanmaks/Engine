@@ -73,6 +73,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp"
 },
@@ -93,6 +99,18 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/VertexArray.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/VertexArray.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RenderCommand.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RenderCommand.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RendererAPI.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RendererAPI.cpp"
 },
 
 {
