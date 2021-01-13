@@ -64,3 +64,13 @@
 2	3247	1610390906646754795	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o	c7d108f2a6c3eba3
 3247	3339	1610390906740754743	Hazel/libHazel.a	6562ee0a4df4b44e
 3339	4202	1610390907598754266	Sandbox/SandboxApp	9a387787c95cb39b
+2	1906	1610525906280414764	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o	1f7a2ebdfb0dd8dc
+2	1921	1610525906292414670	Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o	bd1a652f60e7bd15
+3	1924	1610525906298414623	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o	5cb409d0b2da0d8e
+3	2001	1610525906375414016	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o	7e1d13475da6917a
+4	2046	1610525906421413654	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o	2bcc6b7b845f7f71
+3	2068	1610525906443413481	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o	aac42a8e70d9b9ec
+4	2356	1610525906730411222	Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o	75eb38ed3c827b80
+2	2859	1610525907232407270	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o	c7d108f2a6c3eba3
+2859	2933	1610525907306406687	Hazel/libHazel.a	6562ee0a4df4b44e
+2933	3405	1610525907777402979	Sandbox/SandboxApp	9a387787c95cb39b
