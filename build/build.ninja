@@ -206,6 +206,14 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o: CXX_COM
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
+build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLTexture.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
+
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Shader.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o.d
@@ -262,6 +270,22 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o: CX
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
+build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Texture.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
+
+build Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/vendor/stb_image/stb_image.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/vendor/stb_image
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target Hazel
@@ -270,7 +294,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o: CX
 #############################################
 # Link the static library Hazel/libHazel.a
 
-build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o || Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
+build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o || Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :

@@ -22,6 +22,8 @@ add_library(
     src/Platform/OpenGL/OpenGLVertexArray.cpp
     src/Platform/OpenGL/OpenGLRendererAPI.cpp
     src/Platform/OpenGL/OpenGLShader.cpp
+    src/Platform/OpenGL/OpenGLTexture.cpp
+
 
     
 
@@ -33,7 +35,9 @@ add_library(
     src/Hazel/Renderer/RenderCommand.cpp
     src/Hazel/Renderer/RendererAPI.cpp
     src/Hazel/Renderer/OrthographicCamera.cpp
-    
+    src/Hazel/Renderer/Texture.cpp
+
+    vendor/stb_image/stb_image.cpp
 
     )
 
@@ -43,6 +47,8 @@ target_link_libraries( Hazel PUBLIC spdlog::spdlog)
 target_link_libraries( Hazel PUBLIC glad )
 target_link_libraries( Hazel PUBLIC glfw )
 target_link_libraries( Hazel PUBLIC imgui )
+# target_link_libraries( Hazel PUBLIC stb_image )
+
 
 
 

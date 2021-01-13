@@ -85,6 +85,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp"
 },
@@ -123,6 +129,18 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/stb_image/stb_image.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/stb_image/stb_image.cpp"
 },
 
 {
