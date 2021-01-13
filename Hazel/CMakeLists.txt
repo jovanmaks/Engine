@@ -21,6 +21,8 @@ add_library(
     src/Platform/OpenGL/OpenGLBuffer.cpp
     src/Platform/OpenGL/OpenGLVertexArray.cpp
     src/Platform/OpenGL/OpenGLRendererAPI.cpp
+    src/Platform/OpenGL/OpenGLShader.cpp
+
     
 
     
