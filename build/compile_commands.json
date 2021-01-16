@@ -31,32 +31,32 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Application.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Application.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Application.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Log.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Log.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Log.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Log.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Log.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Layer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Layer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Layer.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Layer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Layer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/LayerStack.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/LayerStack.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/LayerStack.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/LayerStack.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/LayerStack.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/OrthographicCameraController.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/OrthographicCameraController.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp"
 },
 
 {
@@ -243,5 +243,11 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/Sandbox2D.cpp",
+  "file": "/home/demijan/Projects/Engine/Sandbox/src/Sandbox2D.cpp"
 }
 ]

@@ -11,12 +11,12 @@ add_library(
     src/Hazel/ImGui/ImGuiBuild.cpp
 
 
-    src/Hazel/Application.cpp
-    src/Hazel/EntryPoint.h
-    src/Hazel/Log.cpp  
-    src/Hazel/Layer.cpp
-    src/Hazel/LayerStack.cpp
-    src/Hazel/OrthographicCameraController.cpp
+    src/Hazel/Core/Application.cpp
+    # src/Hazel/EntryPoint.h
+    src/Hazel/Core/Log.cpp  
+    src/Hazel/Core/Layer.cpp
+    src/Hazel/Core/LayerStack.cpp
+    src/Hazel/Renderer/OrthographicCameraController.cpp
 
 
 
