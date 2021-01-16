@@ -16,6 +16,9 @@ add_library(
     src/Hazel/Log.cpp  
     src/Hazel/Layer.cpp
     src/Hazel/LayerStack.cpp
+    src/Hazel/OrthographicCameraController.cpp
+
+
 
     src/Platform/OpenGL/OpenGLContext.cpp
     src/Platform/OpenGL/OpenGLBuffer.cpp
