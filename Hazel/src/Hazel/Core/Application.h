@@ -1,7 +1,6 @@
 #pragma once 
 
-#include "Core.h"
-
+#include "Hazel/Core/Core.h"
 
 #include "Hazel/Core/Window.h"
 #include "Hazel/Core/LayerStack.h"
@@ -27,7 +26,7 @@ namespace Hazel{
     {
         public:
             Application();
-            virtual ~Application() = default;
+            virtual ~Application();
 
             void Run();
 

@@ -40,6 +40,9 @@ add_library(
     src/Hazel/Renderer/Texture.cpp
     src/Hazel/Renderer/Renderer2D.cpp
     src/Hazel/Renderer/OrthographicCameraController.cpp
+    src/Hazel/Renderer/GraphicsContext.cpp
+    
+
 
     vendor/stb_image/stb_image.cpp
 

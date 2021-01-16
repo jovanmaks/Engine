@@ -1,4 +1,6 @@
 #pragma once
+#include <vector>
+
 
 #include "Hazel.h"
 
@@ -12,6 +14,7 @@ public:
 	virtual void OnDetach() override;
 
 	void OnUpdate(Hazel::Timestep ts) override;
+
 	virtual void OnImGuiRender() override;
 	void OnEvent(Hazel::Event& e) override;
 private:
@@ -23,5 +26,15 @@ private:
 
 
     Hazel::Ref<Hazel::Texture2D> m_CheckerboardTexture;
-	glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };
+
+
+	struct ProfileResult
+	{
+		const char* Name;
+		float Time;
+	};
+
+	std::vector<ProfileResult> m_ProfileResults;
+	
+	glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };	
 }; 
