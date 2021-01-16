@@ -55,12 +55,6 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp"
 },
@@ -141,6 +135,18 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer2D.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer2D.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp"
 },
 
 {

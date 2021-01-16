@@ -16,20 +16,19 @@ add_library(
     src/Hazel/Core/Log.cpp  
     src/Hazel/Core/Layer.cpp
     src/Hazel/Core/LayerStack.cpp
-    src/Hazel/Renderer/OrthographicCameraController.cpp
-
-
-
+    
+    
+    
     src/Platform/OpenGL/OpenGLContext.cpp
     src/Platform/OpenGL/OpenGLBuffer.cpp
     src/Platform/OpenGL/OpenGLVertexArray.cpp
     src/Platform/OpenGL/OpenGLRendererAPI.cpp
     src/Platform/OpenGL/OpenGLShader.cpp
     src/Platform/OpenGL/OpenGLTexture.cpp
-
-
     
-
+    
+    
+    
     
     src/Hazel/Renderer/Shader.cpp
     src/Hazel/Renderer/Buffer.cpp
@@ -39,6 +38,8 @@ add_library(
     src/Hazel/Renderer/RendererAPI.cpp
     src/Hazel/Renderer/OrthographicCamera.cpp
     src/Hazel/Renderer/Texture.cpp
+    src/Hazel/Renderer/Renderer2D.cpp
+    src/Hazel/Renderer/OrthographicCameraController.cpp
 
     vendor/stb_image/stb_image.cpp
 
