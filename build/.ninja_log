@@ -90,3 +90,12 @@
 2922	5212	1610810484040224789	Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o	75eb38ed3c827b80
 5139	5272	1610810484097274458	Hazel/libHazel.a	62cf9b18b3a12bbc
 5272	5943	1610810484767858282	Sandbox/SandboxApp	1bf15cb1d4e22207
+4	1651	1610812974447435974	Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o	73ad6778e5c73b7a
+4	1984	1610812974781727024	Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o	bd1a652f60e7bd15
+5	2006	1610812974803746194	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o	aac42a8e70d9b9ec
+5	2020	1610812974816757523	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o	8bd9333bd4b8d505
+6	2181	1610812974978898690	Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o	ad0789f6b4ae74ad
+5	2192	1610812974988907405	Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o	70b96c8df78b1d5f
+2193	2274	1610812975069977988	Hazel/libHazel.a	62cf9b18b3a12bbc
+6	2290	1610812975087993674	Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o	75eb38ed3c827b80
+2290	2891	1610812975684513031	Sandbox/SandboxApp	1bf15cb1d4e22207
