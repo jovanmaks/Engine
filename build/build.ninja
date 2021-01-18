@@ -101,8 +101,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o: CXX_COMPILER__Hazel_Debug ../H
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/Windows/WindowsWindow.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -111,8 +109,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_C
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/Windows/WindowsInput.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -121,8 +117,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o: CXX_CO
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/ImGui/ImGuiLayer.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -131,8 +125,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o: CXX_COMPILER_
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/ImGui/ImGuiBuild.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -141,8 +133,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o: CXX_COMPILER_
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Core/Application.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -151,8 +141,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o: CXX_COMPILER_
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Core/Log.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -161,8 +149,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o: CXX_COMPILER__Hazel_D
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Core/Layer.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -171,8 +157,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o: CXX_COMPILER__Hazel
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Core/LayerStack.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -181,8 +165,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o: CXX_COMPILER__
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLContext.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -191,8 +173,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o: CXX_CO
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLBuffer.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -201,8 +181,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o: CXX_COM
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLVertexArray.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -211,8 +189,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o: CX
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -221,8 +197,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o: CX
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLShader.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -231,8 +205,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o: CXX_COM
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Platform/OpenGL/OpenGLTexture.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -241,8 +213,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o: CXX_CO
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Shader.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -251,8 +221,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o: CXX_COMPILER__
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Buffer.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -261,8 +229,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o: CXX_COMPILER__
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Renderer.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -271,8 +237,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o: CXX_COMPILER
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/VertexArray.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -281,8 +245,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o: CXX_COMPI
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/RenderCommand.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -291,8 +253,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o: CXX_COM
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/RendererAPI.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -301,8 +261,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o: CXX_COMPI
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/OrthographicCamera.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -311,8 +269,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o: CX
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Texture.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -321,8 +277,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o: CXX_COMPILER_
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/Renderer2D.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -331,8 +285,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o: CXX_COMPIL
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -341,8 +293,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Renderer/GraphicsContext.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -351,8 +301,6 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o: CXX_C
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 build Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/vendor/stb_image/stb_image.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
@@ -361,8 +309,6 @@ build Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o: CXX_COMPILER_
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/vendor/stb_image
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
-  TARGET_PDB = Hazel/libHazel.pdb
 
 
 # =============================================================================
@@ -377,9 +323,8 @@ build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = Hazel/CMakeFiles/Hazel.dir/Hazel.pdb
   TARGET_FILE = Hazel/libHazel.a
-  TARGET_PDB = Hazel/libHazel.pdb
+  TARGET_PDB = Hazel.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -425,8 +370,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/spdlog.cpp.o: CXX_COMPILER__
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/stdout_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -435,8 +378,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/stdout_sinks.cpp.o: CXX_COMP
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/color_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -445,8 +386,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/color_sinks.cpp.o: CXX_COMPI
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/file_sinks.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -455,8 +394,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/file_sinks.cpp.o: CXX_COMPIL
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/async.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -465,8 +402,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/async.cpp.o: CXX_COMPILER__s
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/cfg.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -475,8 +410,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/cfg.cpp.o: CXX_COMPILER__spd
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o: CXX_COMPILER__spdlog_Debug ../Hazel/vendor/spdlog/src/fmt.cpp || cmake_object_order_depends_target_spdlog
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -485,8 +418,6 @@ build Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src/fmt.cpp.o: CXX_COMPILER__spd
   INCLUDES = -I../Hazel/vendor/spdlog/include
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   OBJECT_FILE_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
 
 
 # =============================================================================
@@ -501,9 +432,8 @@ build Hazel/vendor/spdlog/libspdlogd.a: CXX_STATIC_LIBRARY_LINKER__spdlog_Debug 
   OBJECT_DIR = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = Hazel/vendor/spdlog/CMakeFiles/spdlog.dir/spdlog.pdb
   TARGET_FILE = Hazel/vendor/spdlog/libspdlogd.a
-  TARGET_PDB = Hazel/vendor/spdlog/libspdlogd.pdb
+  TARGET_PDB = spdlog.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -548,8 +478,6 @@ build Hazel/vendor/glad/CMakeFiles/glad.dir/src/glad.c.o: C_COMPILER__glad_Debug
   INCLUDES = -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir
   OBJECT_FILE_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir/src
-  TARGET_COMPILE_PDB = Hazel/vendor/glad/CMakeFiles/glad.dir/glad.pdb
-  TARGET_PDB = Hazel/vendor/glad/libglad.pdb
 
 
 # =============================================================================
@@ -564,9 +492,8 @@ build Hazel/vendor/glad/libglad.a: C_STATIC_LIBRARY_LINKER__glad_Debug Hazel/ven
   OBJECT_DIR = Hazel/vendor/glad/CMakeFiles/glad.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = Hazel/vendor/glad/CMakeFiles/glad.dir/glad.pdb
   TARGET_FILE = Hazel/vendor/glad/libglad.a
-  TARGET_PDB = Hazel/vendor/glad/libglad.pdb
+  TARGET_PDB = glad.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -667,8 +594,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backe
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o.d
@@ -676,8 +601,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backe
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o.d
@@ -685,8 +608,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o.d
@@ -694,8 +615,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o.d
@@ -703,8 +622,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o.d
@@ -712,8 +629,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o: CXX_COMPILER__imgui_Debug ../Hazel/vendor/ImGUI/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o.d
@@ -721,8 +636,6 @@ build Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui
   INCLUDES = -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   OBJECT_FILE_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
 
 
 # =============================================================================
@@ -737,9 +650,8 @@ build Hazel/src/Platform/OpenGL/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Deb
   OBJECT_DIR = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/imgui.pdb
   TARGET_FILE = Hazel/src/Platform/OpenGL/libimgui.a
-  TARGET_PDB = Hazel/src/Platform/OpenGL/libimgui.pdb
+  TARGET_PDB = imgui.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -785,8 +697,6 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o: CXX_COMPILER__Sand
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
-  TARGET_COMPILE_PDB = Sandbox/CMakeFiles/SandboxApp.dir/
-  TARGET_PDB = Sandbox/SandboxApp.pdb
 
 build Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o: CXX_COMPILER__SandboxApp_Debug ../Sandbox/src/Sandbox2D.cpp || cmake_object_order_depends_target_SandboxApp
   DEFINES = -DSPDLOG_COMPILED_LIB
@@ -795,8 +705,14 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o: CXX_COMPILER__Sandb
   INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
-  TARGET_COMPILE_PDB = Sandbox/CMakeFiles/SandboxApp.dir/
-  TARGET_PDB = Sandbox/SandboxApp.pdb
+
+build Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o: CXX_COMPILER__SandboxApp_Debug ../Sandbox/src/ExampleLayer.cpp || cmake_object_order_depends_target_SandboxApp
+  DEFINES = -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o.d
+  FLAGS = -g   -fPIC
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src
+  OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
+  OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
 
 
 # =============================================================================
@@ -806,15 +722,14 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o: CXX_COMPILER__Sandb
 #############################################
 # Link the executable Sandbox/SandboxApp
 
-build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/glad/libglad.a /usr/lib64/libglfw.so.3.3 Hazel/src/Platform/OpenGL/libimgui.a || Hazel/libHazel.a Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a
+build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/glad/libglad.a /usr/lib64/libglfw.so.3.3 Hazel/src/Platform/OpenGL/libimgui.a || Hazel/libHazel.a Hazel/src/Platform/OpenGL/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a
   FLAGS = -g
   LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  Hazel/vendor/glad/libglad.a  /usr/lib64/libglfw.so.3.3  Hazel/src/Platform/OpenGL/libimgui.a  -ldl
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = Sandbox/CMakeFiles/SandboxApp.dir/
   TARGET_FILE = Sandbox/SandboxApp
-  TARGET_PDB = Sandbox/SandboxApp.pdb
+  TARGET_PDB = SandboxApp.dbg
 
 # =============================================================================
 # Target aliases.
@@ -903,14 +818,14 @@ build Sandbox/all: phony Sandbox/SandboxApp
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.c /usr/share/cmake/Modules/CheckIncludeFile.c.in /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/share/cmake/Modules/CMakeCCompilerABI.c /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake/Modules/CMakeSystem.cmake.in /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckFunctionExists.c /usr/share/cmake/Modules/CheckIncludeFile.c.in /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/src/Platform/OpenGL/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
 
 
 #############################################

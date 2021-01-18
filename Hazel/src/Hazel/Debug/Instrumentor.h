@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <fstream>
 
+#include <string>
 #include <thread>
 
 namespace Hazel {
