@@ -279,5 +279,17 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/ExampleLayer.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/ExampleLayer.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel-Editor/CMakeFiles/Hazel-Editor.dir/src/EditorLayer.cpp.o -c /home/demijan/Projects/Engine/Hazel-Editor/src/EditorLayer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel-Editor/src/EditorLayer.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel-Editor/CMakeFiles/Hazel-Editor.dir/src/HazelEditorApp.cpp.o -c /home/demijan/Projects/Engine/Hazel-Editor/src/HazelEditorApp.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel-Editor/src/HazelEditorApp.cpp"
 }
 ]

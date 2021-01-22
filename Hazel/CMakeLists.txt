@@ -16,6 +16,8 @@ add_library(
     src/Hazel/Core/Log.cpp  
     src/Hazel/Core/Layer.cpp
     src/Hazel/Core/LayerStack.cpp
+    # src/Hazel/Core/Window.cpp//this is for platform detection
+
     
     
     
