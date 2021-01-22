@@ -25,6 +25,8 @@ add_library(
     src/Platform/OpenGL/OpenGLRendererAPI.cpp
     src/Platform/OpenGL/OpenGLShader.cpp
     src/Platform/OpenGL/OpenGLTexture.cpp
+    src/Platform/OpenGL/OpenGLFramebuffer.cpp
+
     
     
     
@@ -41,6 +43,8 @@ add_library(
     src/Hazel/Renderer/Renderer2D.cpp
     src/Hazel/Renderer/OrthographicCameraController.cpp
     src/Hazel/Renderer/GraphicsContext.cpp
+    src/Hazel/Renderer/Framebuffer.cpp
+
     
 
 

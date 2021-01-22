@@ -91,6 +91,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp"
 },
@@ -153,6 +159,12 @@
   "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/GraphicsContext.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/GraphicsContext.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Framebuffer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Framebuffer.cpp"
 },
 
 {
