@@ -283,13 +283,13 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel-Editor/CMakeFiles/Hazel-Editor.dir/src/EditorLayer.cpp.o -c /home/demijan/Projects/Engine/Hazel-Editor/src/EditorLayer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel-Editor/src/EditorLayer.cpp"
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/EditorLayer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazelnut/src/EditorLayer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazel-Editor/CMakeFiles/Hazel-Editor.dir/src/HazelEditorApp.cpp.o -c /home/demijan/Projects/Engine/Hazel-Editor/src/HazelEditorApp.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel-Editor/src/HazelEditorApp.cpp"
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -o Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/HazelnutApp.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazelnut/src/HazelnutApp.cpp"
 }
 ]

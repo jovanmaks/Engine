@@ -117,7 +117,7 @@ rule CXX_EXECUTABLE_LINKER__SandboxApp_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__Hazel-Editor_Debug
+rule CXX_COMPILER__Hazelnut_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -127,7 +127,7 @@ rule CXX_COMPILER__Hazel-Editor_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__Hazel-Editor_Debug
+rule CXX_EXECUTABLE_LINKER__Hazelnut_Debug
   command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT

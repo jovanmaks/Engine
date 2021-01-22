@@ -29,7 +29,7 @@ add_subdirectory( Hazel/src/Platform/OpenGL )
 
 
 add_subdirectory( Sandbox )
-add_subdirectory( Hazel-Editor )
+add_subdirectory( Hazelnut )
 
 
 
