@@ -4,34 +4,26 @@
 #include "Sandbox2D.h"
 #include "ExampleLayer.h"
 
-
 #include "Platform/OpenGL/OpenGLShader.h"
-
-
-
 
 class Sandbox : public Hazel::Application
 {
 
 public:
-    Sandbox()
-    {
+	Sandbox()
+	{
 
-        // PushLayer(new ExampleLayer());
+		// PushLayer(new ExampleLayer());
 		PushLayer(new Sandbox2D());
+	}
 
-    }
-
-    ~Sandbox()
-    {
-
-    }
-
+	~Sandbox()
+	{
+	}
 };
 
-
-Hazel::Application* Hazel::CreateApplication()
+Hazel::Application *Hazel::CreateApplication()
 {
 
-    return new Sandbox();
+	return new Sandbox();
 }
