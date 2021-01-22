@@ -2,91 +2,79 @@
 // #include "Hazel/Core/Application.h"
 #include "Application.h"
 
-
-
 #include "Hazel/Core/Log.h"
 
-
-#include <glad/glad.h>   
+#include <glad/glad.h>
 #include "Hazel/Renderer/Renderer.h"
 #include "Input.h"
 #include "Hazel/Core/Input.h"
 
 #include <GLFW/glfw3.h>
 
-
-namespace Hazel {
+namespace Hazel
+{
 
 	// #define BIND_EVENT_FN(x) std::bind(&Application::x, this, std::placeholders::_1)
 
-    Application* Application::s_Instance = nullptr;
+	Application *Application::s_Instance = nullptr;
 
-    Application::Application()
-        
-    {
+	Application::Application()
+
+	{
 		HZ_PROFILE_FUNCTION();
 
-        HZ_CORE_ASSERT(!s_Instance, "Application already exists!");
+		HZ_CORE_ASSERT(!s_Instance, "Application already exists!");
 		s_Instance = this;
 
-     	m_Window = Window::Create();
+		m_Window = Window::Create();
 		m_Window->SetEventCallback(HZ_BIND_EVENT_FN(Application::OnEvent));
 
-        Renderer::Init();
+		Renderer::Init();
 
-        m_ImGuiLayer = new ImGuiLayer();
+		m_ImGuiLayer = new ImGuiLayer();
 		PushOverlay(m_ImGuiLayer);
+	}
 
-      
-    }
-
-    Application::~Application()
+	Application::~Application()
 	{
 		HZ_PROFILE_FUNCTION();
 		Renderer::Shutdown();
 	}
-   
 
-    void Application::PushLayer(Layer* layer)
+	void Application::PushLayer(Layer *layer)
 	{
 		HZ_PROFILE_FUNCTION();
 		m_LayerStack.PushLayer(layer);
 		layer->OnAttach();
 	}
 
-	void Application::PushOverlay(Layer* layer)
+	void Application::PushOverlay(Layer *layer)
 	{
 		HZ_PROFILE_FUNCTION();
 		m_LayerStack.PushOverlay(layer);
 		layer->OnAttach();
 	}
 
-
-
-    void Application::OnEvent(Event &e)
-    {
+	void Application::OnEvent(Event &e)
+	{
 		HZ_PROFILE_FUNCTION();
-        EventDispatcher dispatcher(e);
-       
+		EventDispatcher dispatcher(e);
 
-       dispatcher.Dispatch<WindowCloseEvent>(HZ_BIND_EVENT_FN(Application::OnWindowClosed));
+		dispatcher.Dispatch<WindowCloseEvent>(HZ_BIND_EVENT_FN(Application::OnWindowClosed));
 		dispatcher.Dispatch<WindowResizeEvent>(HZ_BIND_EVENT_FN(Application::OnWindowResize));
-        HZ_CORE_TRACE("{0}",e);
-        for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it)
+		HZ_CORE_TRACE("{0}", e);
+		for (auto it = m_LayerStack.rbegin(); it != m_LayerStack.rend(); ++it)
 		{
-			(*it)->OnEvent(e);
 			if (e.Handled)
 				break;
+			(*it)->OnEvent(e);
 		}
-    }
+	}
 
-    
-  
+	void Application::Run()
+	{
 
-    void Application::Run()
-    {
-   
-       HZ_PROFILE_FUNCTION();
+		HZ_PROFILE_FUNCTION();
 
 		while (m_Running)
 		{
@@ -101,7 +89,7 @@ namespace Hazel {
 				{
 					HZ_PROFILE_SCOPE("LayerStack OnUpdate");
 
-					for (Layer* layer : m_LayerStack)
+					for (Layer *layer : m_LayerStack)
 						layer->OnUpdate(timestep);
 				}
 
@@ -109,7 +97,7 @@ namespace Hazel {
 				{
 					HZ_PROFILE_SCOPE("LayerStack OnImGuiRender");
 
-					for (Layer* layer : m_LayerStack)
+					for (Layer *layer : m_LayerStack)
 						layer->OnImGuiRender();
 				}
 				m_ImGuiLayer->End();
@@ -117,16 +105,15 @@ namespace Hazel {
 
 			m_Window->OnUpdate();
 		}
-    }
+	}
 
-    bool Application::OnWindowClosed(WindowCloseEvent& e)
-    {
-        m_Running = false;
-        return true;
-        
-    }
+	bool Application::OnWindowClosed(WindowCloseEvent &e)
+	{
+		m_Running = false;
+		return true;
+	}
 
-    bool Application::OnWindowResize(WindowResizeEvent& e)
+	bool Application::OnWindowResize(WindowResizeEvent &e)
 	{
 		HZ_PROFILE_FUNCTION();
 		if (e.GetWidth() == 0 || e.GetHeight() == 0)
@@ -141,5 +128,4 @@ namespace Hazel {
 		return false;
 	}
 
-
-}
+} // namespace Hazel
