@@ -19,6 +19,8 @@ add_library(
     # src/Hazel/Core/Window.cpp//this is for platform detection
 
     src/Hazel/Scene/Scene.cpp
+    src/Hazel/Scene/Entity.cpp
+
 
 
     

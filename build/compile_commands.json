@@ -61,6 +61,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp"
 },
