@@ -1,6 +1,5 @@
 #include "../../Hazel/vendor/ImGUI/imgui.h"
-#include "../../Hazel/vendor/ent/include/entt.hpp"
-
+// #include "../../Hazel/vendor/ent/include/entt.hpp"
 #include "EditorLayer.h"
 // #include <imgui/imgui.h>
 
@@ -18,7 +17,7 @@ namespace Hazel {
 	{
 		HZ_PROFILE_FUNCTION();
 
-		m_CheckerboardTexture = Texture2D::Create("../../Hazelnut/assets/textures/Checkerboard.png");
+		m_CheckerboardTexture = Texture2D::Create("assets/textures/Checkerboard.png");
 
 		FramebufferSpecification fbSpec;
 		fbSpec.Width = 1280;
@@ -43,18 +42,10 @@ namespace Hazel {
 	{
 		HZ_PROFILE_FUNCTION();
 
-		// Resize
-		if (Hazel::FramebufferSpecification spec = m_Framebuffer->GetSpecification();
-			m_ViewportSize.x > 0.0f && m_ViewportSize.y > 0.0f && // zero sized framebuffer is invalid
-			(spec.Width != m_ViewportSize.x || spec.Height != m_ViewportSize.y))
-		{
-			m_Framebuffer->Resize((uint32_t)m_ViewportSize.x, (uint32_t)m_ViewportSize.y);
-			m_CameraController.OnResize(m_ViewportSize.x, m_ViewportSize.y);
-		}
-
 		// Update
 		if (m_ViewportFocused)
 			m_CameraController.OnUpdate(ts);
+
 		// Render
 		Renderer2D::ResetStats();
 		m_Framebuffer->Bind();
@@ -128,7 +119,7 @@ namespace Hazel {
 				// which we can't undo at the moment without finer window depth/z control.
 				//ImGui::MenuItem("Fullscreen", NULL, &opt_fullscreen_persistant);
 
-			if (ImGui::MenuItem("Exit")) Application::Get().Close();
+				if (ImGui::MenuItem("Exit")) Application::Get().Close();
 				ImGui::EndMenu();
 			}
 
@@ -152,7 +143,6 @@ namespace Hazel {
 		ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2{ 0, 0 });
 		ImGui::Begin("Viewport");
 
-
 		m_ViewportFocused = ImGui::IsWindowFocused();
 		m_ViewportHovered = ImGui::IsWindowHovered();
 		Application::Get().GetImGuiLayer()->BlockEvents(!m_ViewportFocused || !m_ViewportHovered);
@@ -165,10 +155,8 @@ namespace Hazel {
 
 			m_CameraController.OnResize(viewportPanelSize.x, viewportPanelSize.y);
 		}
-
-			
 		uint32_t textureID = m_Framebuffer->GetColorAttachmentRendererID();
-		ImGui::Image((void*)&textureID, ImVec2{ m_ViewportSize.x, m_ViewportSize.y }, ImVec2{ 0, 1 }, ImVec2{ 1, 0 });
+		ImGui::Image((void*)textureID, ImVec2{ m_ViewportSize.x, m_ViewportSize.y }, ImVec2{ 0, 1 }, ImVec2{ 1, 0 });
 		ImGui::End();
 		ImGui::PopStyleVar();
 
@@ -180,4 +168,4 @@ namespace Hazel {
 		m_CameraController.OnEvent(e);
 	}
 
-} 
+}

@@ -5,7 +5,7 @@
 
 namespace Hazel {
 
-		class Hazelnut : public Application
+	class Hazelnut : public Application
 	{
 	public:
 		Hazelnut()
