@@ -15,6 +15,8 @@
 #define HZ_DEBUGBREAK()
 #endif
 
+// TODO: Make this macro able to take in no arguments except condition
+
 #ifdef HZ_ENABLE_ASSERTS
 #define HZ_ASSERT(x, ...)                                   \
 	{                                                       \

@@ -9,6 +9,9 @@ set( GLFWM_VERSION_MINOR "2" )
 #This also disables optimization.
 #For profiling instead of debugging, you generally want both optimization and symbols (aka -g O2).
 
+# set_property(TARGET tgt PROPERTY CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 17)
+
 find_package( OpenGL REQUIRED )
 find_package( glfw3 REQUIRED )
 
