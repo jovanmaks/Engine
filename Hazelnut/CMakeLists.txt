@@ -3,6 +3,7 @@ add_executable(
     Hazelnut
     src/EditorLayer.cpp 
     src/HazelnutApp.cpp  
+    src/Panels/SceneHierarchyPanel.cpp
     
     )
 
