@@ -11,6 +11,9 @@ namespace Hazel {
 		Input() = default;
 
 	public:
+
+		// static bool IsKeyPressed(keycode key);
+
 		virtual ~Input() = default;
 		Input(const Input&) = delete;
 		Input& operator=(const Input&) = delete;
