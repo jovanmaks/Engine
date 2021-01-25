@@ -60,6 +60,82 @@ rule CXX_STATIC_LIBRARY_LINKER__Hazel_Debug
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__yaml-cpp_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX static library.
+
+rule CXX_STATIC_LIBRARY_LINKER__yaml-cpp_Debug
+  command = $PRE_LINK && /usr/bin/cmake -E rm -f $TARGET_FILE && /usr/bin/ar qc $TARGET_FILE $LINK_FLAGS $in && /usr/bin/ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking CXX static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__yaml-cpp-read_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__yaml-cpp-read_Debug
+  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__yaml-cpp-parse_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__yaml-cpp-parse_Debug
+  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
+rule CXX_COMPILER__yaml-cpp-sandbox_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for linking CXX executable.
+
+rule CXX_EXECUTABLE_LINKER__yaml-cpp-sandbox_Debug
+  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  description = Linking CXX executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__spdlog_Debug
   depfile = $DEP_FILE
   deps = gcc
@@ -139,6 +215,15 @@ rule CXX_EXECUTABLE_LINKER__Hazelnut_Debug
 rule RERUN_CMAKE
   command = /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
   description = Re-running CMake...
+  generator = 1
+
+
+#############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = /usr/bin/cmake -P /home/demijan/Projects/Engine/build/CMakeFiles/VerifyGlobs.cmake
+  description = Re-checking globbed directories...
   generator = 1
 
 

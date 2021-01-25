@@ -31,6 +31,8 @@ add_library(
     src/Hazel/Scene/Scene.cpp
     src/Hazel/Scene/Entity.cpp  
     src/Hazel/Scene/SceneCamera.cpp  
+    src/Hazel/Scene/SceneSerializer.cpp  
+
 
     
 
@@ -78,5 +80,14 @@ add_library(
 target_link_libraries(Hazel PUBLIC imgui  )
 
 target_include_directories(imgui PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
+
+# add_library(
+#     yaml
+
+
+
+
+# )
+
 
 # ${CMAKE_DL_LIBS}

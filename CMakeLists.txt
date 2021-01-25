@@ -20,9 +20,14 @@ find_package( glfw3 REQUIRED )
 
 add_subdirectory( Hazel )
 
+add_subdirectory( Hazel/vendor/yaml-cpp )
+target_link_libraries(Hazel PUBLIC yaml-cpp  )
+target_include_directories(yaml-cpp PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
+
 add_subdirectory( Hazel/vendor/spdlog )
 add_subdirectory( Hazel/vendor/glad )
 add_subdirectory( Hazel/vendor/glm )
+
 
 add_subdirectory( Sandbox )
 add_subdirectory( Hazelnut )

@@ -18,7 +18,7 @@
 #############################################
 # Minimal version of Ninja required by this file
 
-ninja_required_version = 1.5
+ninja_required_version = 1.8
 
 
 #############################################
@@ -173,13 +173,13 @@ build Hazel/libimgui.a: CXX_STATIC_LIBRARY_LINKER__imgui_Debug Hazel/CMakeFiles/
 #############################################
 # Order-only phony target for Hazel
 
-build cmake_object_order_depends_target_Hazel: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog
+build cmake_object_order_depends_target_Hazel: phony || cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog cmake_object_order_depends_target_yaml-cpp
 
 build Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/hzpch.cpp || cmake_object_order_depends_target_Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src
 
@@ -187,7 +187,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o: CXX_COMPILER_
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
 
@@ -195,7 +195,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o: CXX_COMPILER__Hazel_D
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
 
@@ -203,7 +203,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o: CXX_COMPILER__Hazel
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
 
@@ -211,7 +211,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o: CXX_COMPILER__
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core
 
@@ -219,7 +219,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o: CXX_COMPILER_
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
 
@@ -227,7 +227,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o: CXX_COMPILER_
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui
 
@@ -235,7 +235,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o: CXX_COMPILER__
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -243,7 +243,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o: CXX_COMPILER__
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -251,7 +251,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o: CXX_COMPILER
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -259,7 +259,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o: CXX_COMPI
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -267,7 +267,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o: CXX_COM
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -275,7 +275,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o: CXX_COMPI
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -283,7 +283,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o: CX
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -291,7 +291,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o: CXX_COMPILER_
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -299,7 +299,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o: CXX_COMPIL
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -307,7 +307,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -315,7 +315,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o: CXX_C
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -323,7 +323,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o: CXX_COMPI
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer
 
@@ -331,7 +331,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o: CXX_COMPILER__Haze
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene
 
@@ -339,7 +339,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o: CXX_COMPILER__Haz
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene
 
@@ -347,7 +347,15 @@ build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneCamera.cpp.o: CXX_COMPILER
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneCamera.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
+  OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
+  OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene
+
+build Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneSerializer.cpp.o: CXX_COMPILER__Hazel_Debug ../Hazel/src/Hazel/Scene/SceneSerializer.cpp || cmake_object_order_depends_target_Hazel
+  DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
+  DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneSerializer.cpp.o.d
+  FLAGS = -g   -fPIC -std=gnu++17
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene
 
@@ -355,7 +363,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o: CXX_CO
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -363,7 +371,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o: CXX_COM
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -371,7 +379,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o: CX
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -379,7 +387,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o: CX
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -387,7 +395,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o: CXX_COM
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -395,7 +403,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o: CXX_CO
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -403,7 +411,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o: CX
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL
 
@@ -411,7 +419,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o: CXX_C
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows
 
@@ -419,7 +427,7 @@ build Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o: CXX_CO
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows
 
@@ -427,7 +435,7 @@ build Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o: CXX_COMPILER_
   DEFINES = -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   OBJECT_FILE_DIR = Hazel/CMakeFiles/Hazel.dir/vendor/stb_image
 
@@ -439,13 +447,816 @@ build Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o: CXX_COMPILER_
 #############################################
 # Link the static library Hazel/libHazel.a
 
-build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneCamera.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o || Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3
+build Hazel/libHazel.a: CXX_STATIC_LIBRARY_LINKER__Hazel_Debug Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneCamera.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneSerializer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o || Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/yaml-cpp/libyaml-cppd.a /usr/lib64/libglfw.so.3.3
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = Hazel/CMakeFiles/Hazel.dir
   POST_BUILD = :
   PRE_LINK = :
   TARGET_FILE = Hazel/libHazel.a
   TARGET_PDB = Hazel.a.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/demijan/Projects/Engine/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Hazel/vendor/yaml-cpp/rebuild_cache: phony Hazel/vendor/yaml-cpp/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for format
+
+build Hazel/vendor/yaml-cpp/format: phony Hazel/vendor/yaml-cpp/CMakeFiles/format
+
+
+#############################################
+# Utility command for edit_cache
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Hazel/vendor/yaml-cpp/edit_cache: phony Hazel/vendor/yaml-cpp/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for NightlyMemCheck
+
+build Hazel/vendor/yaml-cpp/NightlyMemCheck: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemCheck
+
+
+#############################################
+# Utility command for NightlyTest
+
+build Hazel/vendor/yaml-cpp/NightlyTest: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyTest
+
+
+#############################################
+# Utility command for ContinuousConfigure
+
+build Hazel/vendor/yaml-cpp/ContinuousConfigure: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousConfigure
+
+
+#############################################
+# Utility command for ContinuousBuild
+
+build Hazel/vendor/yaml-cpp/ContinuousBuild: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousBuild
+
+
+#############################################
+# Utility command for NightlyConfigure
+
+build Hazel/vendor/yaml-cpp/NightlyConfigure: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyConfigure
+
+
+#############################################
+# Utility command for NightlyMemoryCheck
+
+build Hazel/vendor/yaml-cpp/NightlyMemoryCheck: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemoryCheck
+
+
+#############################################
+# Utility command for ExperimentalTest
+
+build Hazel/vendor/yaml-cpp/ExperimentalTest: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalTest
+
+
+#############################################
+# Utility command for ContinuousUpdate
+
+build Hazel/vendor/yaml-cpp/ContinuousUpdate: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousUpdate
+
+
+#############################################
+# Utility command for NightlyUpdate
+
+build Hazel/vendor/yaml-cpp/NightlyUpdate: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyUpdate
+
+
+#############################################
+# Utility command for ExperimentalMemCheck
+
+build Hazel/vendor/yaml-cpp/ExperimentalMemCheck: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalMemCheck
+
+
+#############################################
+# Utility command for ExperimentalSubmit
+
+build Hazel/vendor/yaml-cpp/ExperimentalSubmit: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalSubmit
+
+
+#############################################
+# Utility command for Experimental
+
+build Hazel/vendor/yaml-cpp/Experimental: phony Hazel/vendor/yaml-cpp/CMakeFiles/Experimental
+
+
+#############################################
+# Utility command for ContinuousCoverage
+
+build Hazel/vendor/yaml-cpp/ContinuousCoverage: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousCoverage
+
+
+#############################################
+# Utility command for ExperimentalConfigure
+
+build Hazel/vendor/yaml-cpp/ExperimentalConfigure: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalConfigure
+
+
+#############################################
+# Utility command for Continuous
+
+build Hazel/vendor/yaml-cpp/Continuous: phony Hazel/vendor/yaml-cpp/CMakeFiles/Continuous
+
+
+#############################################
+# Utility command for Nightly
+
+build Hazel/vendor/yaml-cpp/Nightly: phony Hazel/vendor/yaml-cpp/CMakeFiles/Nightly
+
+
+#############################################
+# Utility command for NightlySubmit
+
+build Hazel/vendor/yaml-cpp/NightlySubmit: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlySubmit
+
+
+#############################################
+# Utility command for NightlyStart
+
+build Hazel/vendor/yaml-cpp/NightlyStart: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyStart
+
+
+#############################################
+# Utility command for ExperimentalCoverage
+
+build Hazel/vendor/yaml-cpp/ExperimentalCoverage: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalCoverage
+
+
+#############################################
+# Utility command for NightlyCoverage
+
+build Hazel/vendor/yaml-cpp/NightlyCoverage: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyCoverage
+
+
+#############################################
+# Utility command for ExperimentalStart
+
+build Hazel/vendor/yaml-cpp/ExperimentalStart: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalStart
+
+
+#############################################
+# Utility command for NightlyBuild
+
+build Hazel/vendor/yaml-cpp/NightlyBuild: phony Hazel/vendor/yaml-cpp/CMakeFiles/NightlyBuild
+
+
+#############################################
+# Utility command for ExperimentalBuild
+
+build Hazel/vendor/yaml-cpp/ExperimentalBuild: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalBuild
+
+
+#############################################
+# Utility command for ExperimentalUpdate
+
+build Hazel/vendor/yaml-cpp/ExperimentalUpdate: phony Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalUpdate
+
+
+#############################################
+# Utility command for ContinuousStart
+
+build Hazel/vendor/yaml-cpp/ContinuousStart: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousStart
+
+
+#############################################
+# Utility command for ContinuousMemCheck
+
+build Hazel/vendor/yaml-cpp/ContinuousMemCheck: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousMemCheck
+
+
+#############################################
+# Utility command for ContinuousTest
+
+build Hazel/vendor/yaml-cpp/ContinuousTest: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousTest
+
+
+#############################################
+# Utility command for ContinuousSubmit
+
+build Hazel/vendor/yaml-cpp/ContinuousSubmit: phony Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousSubmit
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target yaml-cpp
+
+
+#############################################
+# Order-only phony target for yaml-cpp
+
+build cmake_object_order_depends_target_yaml-cpp: phony || Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/contrib/graphbuilder.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/binary.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/convert.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/depthguard.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/directives.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/emit.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/emitfromevents.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/emitter.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/emitterstate.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/emitterutils.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/exceptions.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/exp.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/memory.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/node.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/node_data.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/nodebuilder.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/nodeevents.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/null.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/null.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/null.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/ostream_wrapper.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/parse.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/parser.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/regex_yaml.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/scanner.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/scanscalar.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/scantag.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/scantoken.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/simplekey.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/singledocparser.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/stream.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o: CXX_COMPILER__yaml-cpp_Debug ../Hazel/vendor/yaml-cpp/src/tag.cpp || cmake_object_order_depends_target_yaml-cpp
+  DEP_FILE = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o.d
+  FLAGS = -g   -fPIC -Wall -Wextra -Wshadow -Weffc++ -Wno-long-long -pedantic -pedantic-errors -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../Hazel/vendor/yaml-cpp/src -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target yaml-cpp
+
+
+#############################################
+# Link the static library Hazel/vendor/yaml-cpp/libyaml-cppd.a
+
+build Hazel/vendor/yaml-cpp/libyaml-cppd.a: CXX_STATIC_LIBRARY_LINKER__yaml-cpp_Debug Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilder.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/contrib/graphbuilderadapter.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/binary.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/convert.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/depthguard.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/directives.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emit.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitfromevents.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitter.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterstate.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/emitterutils.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exceptions.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/exp.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/memory.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/node_data.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodebuilder.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/nodeevents.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/null.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/ostream_wrapper.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parse.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/parser.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/regex_yaml.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanner.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scanscalar.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantag.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/scantoken.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/simplekey.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/singledocparser.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/stream.cpp.o Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir/src/tag.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/CMakeFiles/yaml-cpp.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  TARGET_PDB = yaml-cpp.a.dbg
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/format
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/format: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && clang-format --style=file -i /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/contrib/graphbuilder.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/contrib/graphbuilderadapter.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/binary.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/convert.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/depthguard.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/directives.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/emit.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/emitfromevents.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/emitter.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/emitterstate.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/emitterutils.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/exceptions.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/exp.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/memory.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/node.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/node_data.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/nodebuilder.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/nodeevents.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/null.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/ostream_wrapper.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/parse.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/parser.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/regex_yaml.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/scanner.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/scanscalar.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/scantag.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/scantoken.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/simplekey.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/singledocparser.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/stream.cpp /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/src/tag.cpp
+  DESC = Running clang-format
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemCheck
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyTest
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyTest: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyTest
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousConfigure
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousConfigure
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousBuild
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousBuild
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyConfigure
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyConfigure
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemoryCheck
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyMemoryCheck
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalTest
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalTest
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousUpdate
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousUpdate
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyUpdate
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyUpdate
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalMemCheck
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalSubmit
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalSubmit
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/Experimental
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/Experimental: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D Experimental
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousCoverage
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousCoverage
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalConfigure
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalConfigure
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/Continuous
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/Continuous: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D Continuous
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/Nightly
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/Nightly: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D Nightly
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlySubmit
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlySubmit: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlySubmit
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyStart
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyStart: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyStart
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalCoverage
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalCoverage
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyCoverage
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyCoverage
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalStart
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalStart
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/NightlyBuild
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/NightlyBuild: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D NightlyBuild
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalBuild
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalBuild
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalUpdate
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ExperimentalUpdate
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousStart
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousStart: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousStart
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousMemCheck
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousMemCheck
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousTest
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousTest: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousTest
+  pool = console
+
+
+#############################################
+# Custom command for Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousSubmit
+
+build Hazel/vendor/yaml-cpp/CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp && /usr/bin/ctest -D ContinuousSubmit
+  pool = console
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/demijan/Projects/Engine/Hazel/vendor/yaml-cpp/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build Hazel/vendor/yaml-cpp/util/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp/util && /usr/bin/cmake --regenerate-during-build -S/home/demijan/Projects/Engine -B/home/demijan/Projects/Engine/build
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build Hazel/vendor/yaml-cpp/util/rebuild_cache: phony Hazel/vendor/yaml-cpp/util/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target yaml-cpp-read
+
+
+#############################################
+# Order-only phony target for yaml-cpp-read
+
+build cmake_object_order_depends_target_yaml-cpp-read: phony || cmake_object_order_depends_target_yaml-cpp
+
+build Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir/read.cpp.o: CXX_COMPILER__yaml-cpp-read_Debug ../Hazel/vendor/yaml-cpp/util/read.cpp || cmake_object_order_depends_target_yaml-cpp-read
+  DEP_FILE = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir/read.cpp.o.d
+  FLAGS = -g   -fPIC -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target yaml-cpp-read
+
+
+#############################################
+# Link the executable Hazel/vendor/yaml-cpp/util/read
+
+build Hazel/vendor/yaml-cpp/util/read: CXX_EXECUTABLE_LINKER__yaml-cpp-read_Debug Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir/read.cpp.o | Hazel/vendor/yaml-cpp/libyaml-cppd.a || Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  FLAGS = -g
+  LINK_LIBRARIES = Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-read.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Hazel/vendor/yaml-cpp/util/read
+  TARGET_PDB = read.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build Hazel/vendor/yaml-cpp/util/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp/util && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build Hazel/vendor/yaml-cpp/util/edit_cache: phony Hazel/vendor/yaml-cpp/util/CMakeFiles/edit_cache.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target yaml-cpp-parse
+
+
+#############################################
+# Order-only phony target for yaml-cpp-parse
+
+build cmake_object_order_depends_target_yaml-cpp-parse: phony || cmake_object_order_depends_target_yaml-cpp
+
+build Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o: CXX_COMPILER__yaml-cpp-parse_Debug ../Hazel/vendor/yaml-cpp/util/parse.cpp || cmake_object_order_depends_target_yaml-cpp-parse
+  DEP_FILE = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o.d
+  FLAGS = -g   -fPIC -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target yaml-cpp-parse
+
+
+#############################################
+# Link the executable Hazel/vendor/yaml-cpp/util/parse
+
+build Hazel/vendor/yaml-cpp/util/parse: CXX_EXECUTABLE_LINKER__yaml-cpp-parse_Debug Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir/parse.cpp.o | Hazel/vendor/yaml-cpp/libyaml-cppd.a || Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  FLAGS = -g
+  LINK_LIBRARIES = Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-parse.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Hazel/vendor/yaml-cpp/util/parse
+  TARGET_PDB = parse.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target yaml-cpp-sandbox
+
+
+#############################################
+# Order-only phony target for yaml-cpp-sandbox
+
+build cmake_object_order_depends_target_yaml-cpp-sandbox: phony || cmake_object_order_depends_target_yaml-cpp
+
+build Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir/sandbox.cpp.o: CXX_COMPILER__yaml-cpp-sandbox_Debug ../Hazel/vendor/yaml-cpp/util/sandbox.cpp || cmake_object_order_depends_target_yaml-cpp-sandbox
+  DEP_FILE = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir/sandbox.cpp.o.d
+  FLAGS = -g   -fPIC -std=gnu++17
+  INCLUDES = -I../Hazel/vendor/yaml-cpp/include -I../src
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir
+  OBJECT_FILE_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target yaml-cpp-sandbox
+
+
+#############################################
+# Link the executable Hazel/vendor/yaml-cpp/util/sandbox
+
+build Hazel/vendor/yaml-cpp/util/sandbox: CXX_EXECUTABLE_LINKER__yaml-cpp-sandbox_Debug Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir/sandbox.cpp.o | Hazel/vendor/yaml-cpp/libyaml-cppd.a || Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  FLAGS = -g
+  LINK_LIBRARIES = Hazel/vendor/yaml-cpp/libyaml-cppd.a
+  OBJECT_DIR = Hazel/vendor/yaml-cpp/util/CMakeFiles/yaml-cpp-sandbox.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Hazel/vendor/yaml-cpp/util/sandbox
+  TARGET_PDB = sandbox.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -707,13 +1518,13 @@ build Sandbox/edit_cache: phony Sandbox/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for SandboxApp
 
-build cmake_object_order_depends_target_SandboxApp: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog
+build cmake_object_order_depends_target_SandboxApp: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog cmake_object_order_depends_target_yaml-cpp
 
 build Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o: CXX_COMPILER__SandboxApp_Debug ../Sandbox/src/SandboxApp.cpp || cmake_object_order_depends_target_SandboxApp
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
 
@@ -721,7 +1532,7 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o: CXX_COMPILER__Sandb
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
 
@@ -729,7 +1540,7 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o: CXX_COMPILER__Sa
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   OBJECT_FILE_DIR = Sandbox/CMakeFiles/SandboxApp.dir/src
 
@@ -741,9 +1552,9 @@ build Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o: CXX_COMPILER__Sa
 #############################################
 # Link the executable Sandbox/SandboxApp
 
-build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3 Hazel/libimgui.a Hazel/vendor/glad/libglad.a || Hazel/libHazel.a Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a
+build Sandbox/SandboxApp: CXX_EXECUTABLE_LINKER__SandboxApp_Debug Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3 Hazel/libimgui.a Hazel/vendor/yaml-cpp/libyaml-cppd.a Hazel/vendor/glad/libglad.a || Hazel/libHazel.a Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/yaml-cpp/libyaml-cppd.a
   FLAGS = -g
-  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  /usr/lib64/libglfw.so.3.3  Hazel/libimgui.a  Hazel/vendor/glad/libglad.a  -ldl
+  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  /usr/lib64/libglfw.so.3.3  Hazel/libimgui.a  Hazel/vendor/yaml-cpp/libyaml-cppd.a  Hazel/vendor/glad/libglad.a  -ldl
   OBJECT_DIR = Sandbox/CMakeFiles/SandboxApp.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -785,13 +1596,13 @@ build Hazelnut/edit_cache: phony Hazelnut/CMakeFiles/edit_cache.util
 #############################################
 # Order-only phony target for Hazelnut
 
-build cmake_object_order_depends_target_Hazelnut: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog
+build cmake_object_order_depends_target_Hazelnut: phony || cmake_object_order_depends_target_Hazel cmake_object_order_depends_target_glad cmake_object_order_depends_target_imgui cmake_object_order_depends_target_spdlog cmake_object_order_depends_target_yaml-cpp
 
 build Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o: CXX_COMPILER__Hazelnut_Debug ../Hazelnut/src/EditorLayer.cpp || cmake_object_order_depends_target_Hazelnut
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazelnut/CMakeFiles/Hazelnut.dir
   OBJECT_FILE_DIR = Hazelnut/CMakeFiles/Hazelnut.dir/src
 
@@ -799,7 +1610,7 @@ build Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o: CXX_COMPILER__Haze
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazelnut/CMakeFiles/Hazelnut.dir
   OBJECT_FILE_DIR = Hazelnut/CMakeFiles/Hazelnut.dir/src
 
@@ -807,7 +1618,7 @@ build Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels/SceneHierarchyPanel.cpp.o: CXX
   DEFINES = -DSPDLOG_COMPILED_LIB
   DEP_FILE = Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels/SceneHierarchyPanel.cpp.o.d
   FLAGS = -g   -fPIC -std=gnu++17
-  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include
+  INCLUDES = -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include
   OBJECT_DIR = Hazelnut/CMakeFiles/Hazelnut.dir
   OBJECT_FILE_DIR = Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels
 
@@ -819,9 +1630,9 @@ build Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels/SceneHierarchyPanel.cpp.o: CXX
 #############################################
 # Link the executable Hazelnut/Hazelnut
 
-build Hazelnut/Hazelnut: CXX_EXECUTABLE_LINKER__Hazelnut_Debug Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels/SceneHierarchyPanel.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3 Hazel/libimgui.a Hazel/vendor/glad/libglad.a || Hazel/libHazel.a Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a
+build Hazelnut/Hazelnut: CXX_EXECUTABLE_LINKER__Hazelnut_Debug Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o Hazelnut/CMakeFiles/Hazelnut.dir/src/Panels/SceneHierarchyPanel.cpp.o | Hazel/libHazel.a Hazel/vendor/spdlog/libspdlogd.a /usr/lib64/libglfw.so.3.3 Hazel/libimgui.a Hazel/vendor/yaml-cpp/libyaml-cppd.a Hazel/vendor/glad/libglad.a || Hazel/libHazel.a Hazel/libimgui.a Hazel/vendor/glad/libglad.a Hazel/vendor/spdlog/libspdlogd.a Hazel/vendor/yaml-cpp/libyaml-cppd.a
   FLAGS = -g
-  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  /usr/lib64/libglfw.so.3.3  Hazel/libimgui.a  Hazel/vendor/glad/libglad.a  -ldl
+  LINK_LIBRARIES = Hazel/libHazel.a  Hazel/vendor/spdlog/libspdlogd.a  -lpthread  /usr/lib64/libglfw.so.3.3  Hazel/libimgui.a  Hazel/vendor/yaml-cpp/libyaml-cppd.a  Hazel/vendor/glad/libglad.a  -ldl
   OBJECT_DIR = Hazelnut/CMakeFiles/Hazelnut.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -831,11 +1642,69 @@ build Hazelnut/Hazelnut: CXX_EXECUTABLE_LINKER__Hazelnut_Debug Hazelnut/CMakeFil
 # =============================================================================
 # Target aliases.
 
+build Continuous: phony Hazel/vendor/yaml-cpp/Continuous
+
+build ContinuousBuild: phony Hazel/vendor/yaml-cpp/ContinuousBuild
+
+build ContinuousConfigure: phony Hazel/vendor/yaml-cpp/ContinuousConfigure
+
+build ContinuousCoverage: phony Hazel/vendor/yaml-cpp/ContinuousCoverage
+
+build ContinuousMemCheck: phony Hazel/vendor/yaml-cpp/ContinuousMemCheck
+
+build ContinuousStart: phony Hazel/vendor/yaml-cpp/ContinuousStart
+
+build ContinuousSubmit: phony Hazel/vendor/yaml-cpp/ContinuousSubmit
+
+build ContinuousTest: phony Hazel/vendor/yaml-cpp/ContinuousTest
+
+build ContinuousUpdate: phony Hazel/vendor/yaml-cpp/ContinuousUpdate
+
+build Experimental: phony Hazel/vendor/yaml-cpp/Experimental
+
+build ExperimentalBuild: phony Hazel/vendor/yaml-cpp/ExperimentalBuild
+
+build ExperimentalConfigure: phony Hazel/vendor/yaml-cpp/ExperimentalConfigure
+
+build ExperimentalCoverage: phony Hazel/vendor/yaml-cpp/ExperimentalCoverage
+
+build ExperimentalMemCheck: phony Hazel/vendor/yaml-cpp/ExperimentalMemCheck
+
+build ExperimentalStart: phony Hazel/vendor/yaml-cpp/ExperimentalStart
+
+build ExperimentalSubmit: phony Hazel/vendor/yaml-cpp/ExperimentalSubmit
+
+build ExperimentalTest: phony Hazel/vendor/yaml-cpp/ExperimentalTest
+
+build ExperimentalUpdate: phony Hazel/vendor/yaml-cpp/ExperimentalUpdate
+
 build Hazel: phony Hazel/libHazel.a
 
 build Hazelnut: phony Hazelnut/Hazelnut
 
+build Nightly: phony Hazel/vendor/yaml-cpp/Nightly
+
+build NightlyBuild: phony Hazel/vendor/yaml-cpp/NightlyBuild
+
+build NightlyConfigure: phony Hazel/vendor/yaml-cpp/NightlyConfigure
+
+build NightlyCoverage: phony Hazel/vendor/yaml-cpp/NightlyCoverage
+
+build NightlyMemCheck: phony Hazel/vendor/yaml-cpp/NightlyMemCheck
+
+build NightlyMemoryCheck: phony Hazel/vendor/yaml-cpp/NightlyMemoryCheck
+
+build NightlyStart: phony Hazel/vendor/yaml-cpp/NightlyStart
+
+build NightlySubmit: phony Hazel/vendor/yaml-cpp/NightlySubmit
+
+build NightlyTest: phony Hazel/vendor/yaml-cpp/NightlyTest
+
+build NightlyUpdate: phony Hazel/vendor/yaml-cpp/NightlyUpdate
+
 build SandboxApp: phony Sandbox/SandboxApp
+
+build format: phony Hazel/vendor/yaml-cpp/format
 
 build glad: phony Hazel/vendor/glad/libglad.a
 
@@ -849,7 +1718,23 @@ build libimgui.a: phony Hazel/libimgui.a
 
 build libspdlogd.a: phony Hazel/vendor/spdlog/libspdlogd.a
 
+build libyaml-cppd.a: phony Hazel/vendor/yaml-cpp/libyaml-cppd.a
+
+build parse: phony Hazel/vendor/yaml-cpp/util/parse
+
+build read: phony Hazel/vendor/yaml-cpp/util/read
+
+build sandbox: phony Hazel/vendor/yaml-cpp/util/sandbox
+
 build spdlog: phony Hazel/vendor/spdlog/libspdlogd.a
+
+build yaml-cpp: phony Hazel/vendor/yaml-cpp/libyaml-cppd.a
+
+build yaml-cpp-parse: phony Hazel/vendor/yaml-cpp/util/parse
+
+build yaml-cpp-read: phony Hazel/vendor/yaml-cpp/util/read
+
+build yaml-cpp-sandbox: phony Hazel/vendor/yaml-cpp/util/sandbox
 
 # =============================================================================
 # Folder targets.
@@ -859,7 +1744,7 @@ build spdlog: phony Hazel/vendor/spdlog/libspdlogd.a
 #############################################
 # Folder: /home/demijan/Projects/Engine/build
 
-build all: phony Hazel/all Hazel/vendor/spdlog/all Hazel/vendor/glad/all Hazel/vendor/glm/all Sandbox/all Hazelnut/all
+build all: phony Hazel/all Hazel/vendor/yaml-cpp/all Hazel/vendor/spdlog/all Hazel/vendor/glad/all Hazel/vendor/glm/all Sandbox/all Hazelnut/all
 
 # =============================================================================
 
@@ -899,6 +1784,20 @@ build Hazel/vendor/spdlog/all: phony Hazel/vendor/spdlog/libspdlogd.a
 # =============================================================================
 
 #############################################
+# Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp
+
+build Hazel/vendor/yaml-cpp/all: phony Hazel/vendor/yaml-cpp/libyaml-cppd.a Hazel/vendor/yaml-cpp/util/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/demijan/Projects/Engine/build/Hazel/vendor/yaml-cpp/util
+
+build Hazel/vendor/yaml-cpp/util/all: phony Hazel/vendor/yaml-cpp/util/read Hazel/vendor/yaml-cpp/util/parse Hazel/vendor/yaml-cpp/util/sandbox
+
+# =============================================================================
+
+#############################################
 # Folder: /home/demijan/Projects/Engine/build/Hazelnut
 
 build Hazelnut/all: phony Hazelnut/Hazelnut
@@ -915,16 +1814,30 @@ build Sandbox/all: phony Sandbox/SandboxApp
 
 
 #############################################
+# Phony target to force glob verification run.
+
+build /home/demijan/Projects/Engine/build/CMakeFiles/VerifyGlobs.cmake_force: phony
+
+
+#############################################
+# Re-run CMake to check if globbed directories changed.
+
+build /home/demijan/Projects/Engine/build/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | /home/demijan/Projects/Engine/build/CMakeFiles/VerifyGlobs.cmake_force
+  pool = console
+  restat = 1
+
+
+#############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Hazelnut/CMakeLists.txt ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE /home/demijan/Projects/Engine/build/CMakeFiles/cmake.verify_globs | ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Hazel/vendor/yaml-cpp/CMakeLists.txt ../Hazel/vendor/yaml-cpp/util/CMakeLists.txt ../Hazel/vendor/yaml-cpp/yaml-cpp-config.cmake.in ../Hazel/vendor/yaml-cpp/yaml-cpp.pc.in ../Hazelnut/CMakeLists.txt ../Sandbox/CMakeLists.txt /home/demijan/Projects/Engine/build/CMakeFiles/VerifyGlobs.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Hazelnut/CMakeLists.txt ../Sandbox/CMakeLists.txt /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../Hazel/CMakeLists.txt ../Hazel/vendor/glad/CMakeLists.txt ../Hazel/vendor/glm/CMakeLists.txt ../Hazel/vendor/glm/glm/CMakeLists.txt ../Hazel/vendor/spdlog/CMakeLists.txt ../Hazel/vendor/spdlog/cmake/ide.cmake ../Hazel/vendor/spdlog/cmake/utils.cmake ../Hazel/vendor/yaml-cpp/CMakeLists.txt ../Hazel/vendor/yaml-cpp/util/CMakeLists.txt ../Hazel/vendor/yaml-cpp/yaml-cpp-config.cmake.in ../Hazel/vendor/yaml-cpp/yaml-cpp.pc.in ../Hazelnut/CMakeLists.txt ../Sandbox/CMakeLists.txt /home/demijan/Projects/Engine/build/CMakeFiles/VerifyGlobs.cmake /usr/lib64/cmake/glfw3/glfw3Config.cmake /usr/lib64/cmake/glfw3/glfw3ConfigVersion.cmake /usr/lib64/cmake/glfw3/glfw3Targets-noconfig.cmake /usr/lib64/cmake/glfw3/glfw3Targets.cmake /usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeDependentOption.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/CTest.cmake /usr/share/cmake/Modules/CTestTargets.cmake /usr/share/cmake/Modules/CTestUseLaunchers.cmake /usr/share/cmake/Modules/CheckCSourceCompiles.cmake /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake/Modules/CheckIncludeFile.cmake /usr/share/cmake/Modules/CheckLibraryExists.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/DartConfiguration.tcl.in /usr/share/cmake/Modules/FindOpenGL.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/FindThreads.cmake /usr/share/cmake/Modules/GNUInstallDirs.cmake /usr/share/cmake/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake /usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.17.4/CMakeCCompiler.cmake CMakeFiles/3.17.4/CMakeCXXCompiler.cmake CMakeFiles/3.17.4/CMakeSystem.cmake: phony
 
 
 #############################################
