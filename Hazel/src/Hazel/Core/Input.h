@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Hazel/Core/Base.h"
+#include <glm/glm.hpp>
 
 namespace Hazel {
 

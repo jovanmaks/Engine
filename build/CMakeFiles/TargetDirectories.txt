@@ -2,6 +2,7 @@
 /home/demijan/Projects/Engine/build/CMakeFiles/edit_cache.dir
 /home/demijan/Projects/Engine/build/Hazel/CMakeFiles/rebuild_cache.dir
 /home/demijan/Projects/Engine/build/Hazel/CMakeFiles/edit_cache.dir
+/home/demijan/Projects/Engine/build/Hazel/CMakeFiles/imgui.dir
 /home/demijan/Projects/Engine/build/Hazel/CMakeFiles/Hazel.dir
 /home/demijan/Projects/Engine/build/Hazel/vendor/spdlog/CMakeFiles/edit_cache.dir
 /home/demijan/Projects/Engine/build/Hazel/vendor/spdlog/CMakeFiles/rebuild_cache.dir
@@ -13,9 +14,6 @@
 /home/demijan/Projects/Engine/build/Hazel/vendor/glm/CMakeFiles/edit_cache.dir
 /home/demijan/Projects/Engine/build/Hazel/vendor/glm/glm/CMakeFiles/rebuild_cache.dir
 /home/demijan/Projects/Engine/build/Hazel/vendor/glm/glm/CMakeFiles/edit_cache.dir
-/home/demijan/Projects/Engine/build/Hazel/src/Platform/OpenGL/CMakeFiles/rebuild_cache.dir
-/home/demijan/Projects/Engine/build/Hazel/src/Platform/OpenGL/CMakeFiles/edit_cache.dir
-/home/demijan/Projects/Engine/build/Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir
 /home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/rebuild_cache.dir
 /home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/edit_cache.dir
 /home/demijan/Projects/Engine/build/Sandbox/CMakeFiles/SandboxApp.dir

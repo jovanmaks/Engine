@@ -1,187 +1,235 @@
 [
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/hzpch.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/imgui.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/imgui_demo.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/imgui_draw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/imgui_widgets.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -I../Hazel/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/imgui.dir/vendor/ImGUI/imgui_tables.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/hzpch.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/hzpch.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/hzpch.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsWindow.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsWindow.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Application.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Application.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Application.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Application.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Log.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Log.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Log.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Log.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Layer.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/Layer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Layer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/Layer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/LayerStack.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Core/LayerStack.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Core/LayerStack.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Core/LayerStack.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiLayer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiLayer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp"
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/ImGui/ImGuiBuild.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/ImGui/ImGuiBuild.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLBuffer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLBuffer.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLVertexArray.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLVertexArray.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLShader.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLShader.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Shader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Shader.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Buffer.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Buffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Buffer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Buffer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/VertexArray.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/VertexArray.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/VertexArray.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/VertexArray.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RenderCommand.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RenderCommand.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RenderCommand.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RenderCommand.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RendererAPI.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/RendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RendererAPI.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/RendererAPI.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCamera.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCamera.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Texture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Texture.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer2D.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Renderer2D.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer2D.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Renderer2D.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/OrthographicCameraController.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/OrthographicCameraController.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/GraphicsContext.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/GraphicsContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/GraphicsContext.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/GraphicsContext.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Framebuffer.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/Framebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Framebuffer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/Framebuffer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/stb_image/stb_image.cpp",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Entity.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Entity.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/SceneCamera.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/SceneCamera.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/SceneCamera.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLContext.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLContext.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLBuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLBuffer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLBuffer.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLVertexArray.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLVertexArray.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLVertexArray.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLRendererAPI.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLRendererAPI.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLShader.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLShader.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLShader.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLTexture.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLTexture.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/OpenGL/OpenGLFramebuffer.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/OpenGL/OpenGLFramebuffer.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsWindow.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsWindow.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsWindow.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Platform/Windows/WindowsInput.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Platform/Windows/WindowsInput.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/g++  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/vendor/stb_image/stb_image.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/stb_image/stb_image.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/vendor/stb_image/stb_image.cpp"
 },
 
@@ -235,73 +283,31 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_glfw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_glfw.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/backends/imgui_impl_opengl3.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/backends/imgui_impl_opengl3.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_demo.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_demo.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_draw.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_draw.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_widgets.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_widgets.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++   -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazel/src/Platform/OpenGL/CMakeFiles/imgui.dir/__/__/__/vendor/ImGUI/imgui_tables.cpp.o -c /home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp",
-  "file": "/home/demijan/Projects/Engine/Hazel/vendor/ImGUI/imgui_tables.cpp"
-},
-
-{
-  "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/SandboxApp.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/SandboxApp.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/Sandbox2D.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/Sandbox2D.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/Sandbox2D.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/Sandbox2D.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/ExampleLayer.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Sandbox/CMakeFiles/SandboxApp.dir/src/ExampleLayer.cpp.o -c /home/demijan/Projects/Engine/Sandbox/src/ExampleLayer.cpp",
   "file": "/home/demijan/Projects/Engine/Sandbox/src/ExampleLayer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/EditorLayer.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazelnut/CMakeFiles/Hazelnut.dir/src/EditorLayer.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/EditorLayer.cpp",
   "file": "/home/demijan/Projects/Engine/Hazelnut/src/EditorLayer.cpp"
 },
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
-  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include -I../Hazel/src/Platform/OpenGL/src  -g   -fPIC -std=gnu++17 -o Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/HazelnutApp.cpp",
+  "command": "/usr/bin/g++  -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazelnut/CMakeFiles/Hazelnut.dir/src/HazelnutApp.cpp.o -c /home/demijan/Projects/Engine/Hazelnut/src/HazelnutApp.cpp",
   "file": "/home/demijan/Projects/Engine/Hazelnut/src/HazelnutApp.cpp"
 }
 ]

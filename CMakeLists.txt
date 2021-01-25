@@ -9,27 +9,20 @@ set( GLFWM_VERSION_MINOR "2" )
 #This also disables optimization.
 #For profiling instead of debugging, you generally want both optimization and symbols (aka -g O2).
 
+
 # set_property(TARGET tgt PROPERTY CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD 17)
+add_compile_options(-fPIC)
 
 find_package( OpenGL REQUIRED )
 find_package( glfw3 REQUIRED )
 
-add_compile_options(-fPIC)
-
 
 add_subdirectory( Hazel )
+
 add_subdirectory( Hazel/vendor/spdlog )
 add_subdirectory( Hazel/vendor/glad )
 add_subdirectory( Hazel/vendor/glm )
-
-
-
-#imgui
-add_subdirectory( Hazel/src/Platform/OpenGL )
-# add_subdirectory( Hazel/vendor/ImGui )
-
-
 
 add_subdirectory( Sandbox )
 add_subdirectory( Hazelnut )
