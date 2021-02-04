@@ -10,3 +10,6 @@
 [submodule "Hazel/vendor/ImGUI"]
 	path = Hazel/vendor/ImGUI
 	url = https://github.com/ocornut/imgui
+[submodule "Hazel/vendor/ImGuizmo"]
+	path = Hazel/vendor/ImGuizmo
+	url = https://github.com/CedricGuillemet/ImGuizmo
