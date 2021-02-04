@@ -11,6 +11,9 @@ add_library(
     src/Hazel/Core/Layer.cpp
     src/Hazel/Core/LayerStack.cpp
     # src/Hazel/Core/Window.cpp//this is for platform detection
+
+    src/Hazel/Math/Math.cpp
+
     
     src/Hazel/ImGui/ImGuiLayer.cpp
     src/Hazel/ImGui/ImGuiBuild.cpp        
@@ -27,14 +30,15 @@ add_library(
     src/Hazel/Renderer/OrthographicCameraController.cpp
     src/Hazel/Renderer/GraphicsContext.cpp
     src/Hazel/Renderer/Framebuffer.cpp
+    src/Hazel/Renderer/EditorCamera.cpp
     
+
+
+
     src/Hazel/Scene/Scene.cpp
     src/Hazel/Scene/Entity.cpp  
     src/Hazel/Scene/SceneCamera.cpp  
-    src/Hazel/Scene/SceneSerializer.cpp  
-
-
-    
+    src/Hazel/Scene/SceneSerializer.cpp      
 
     
     src/Platform/OpenGL/OpenGLContext.cpp
@@ -74,6 +78,10 @@ add_library(
     vendor/ImGUI/imgui_draw.cpp
     vendor/ImGUI/imgui_widgets.cpp
     vendor/ImGUI/imgui_tables.cpp
+
+    vendor/ImGuizmo/ImGuizmo.h
+    vendor/ImGuizmo/ImGuizmo.cpp
+
 
 )
 

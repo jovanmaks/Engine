@@ -25,7 +25,7 @@ rule CUSTOM_COMMAND
 rule CXX_COMPILER__imgui_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -44,7 +44,7 @@ rule CXX_STATIC_LIBRARY_LINKER__imgui_Debug
 rule CXX_COMPILER__Hazel_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -63,7 +63,7 @@ rule CXX_STATIC_LIBRARY_LINKER__Hazel_Debug
 rule CXX_COMPILER__yaml-cpp_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -82,7 +82,7 @@ rule CXX_STATIC_LIBRARY_LINKER__yaml-cpp_Debug
 rule CXX_COMPILER__yaml-cpp-read_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -90,7 +90,7 @@ rule CXX_COMPILER__yaml-cpp-read_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__yaml-cpp-read_Debug
-  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -101,7 +101,7 @@ rule CXX_EXECUTABLE_LINKER__yaml-cpp-read_Debug
 rule CXX_COMPILER__yaml-cpp-parse_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -109,7 +109,7 @@ rule CXX_COMPILER__yaml-cpp-parse_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__yaml-cpp-parse_Debug
-  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -120,7 +120,7 @@ rule CXX_EXECUTABLE_LINKER__yaml-cpp-parse_Debug
 rule CXX_COMPILER__yaml-cpp-sandbox_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -128,7 +128,7 @@ rule CXX_COMPILER__yaml-cpp-sandbox_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__yaml-cpp-sandbox_Debug
-  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -139,7 +139,7 @@ rule CXX_EXECUTABLE_LINKER__yaml-cpp-sandbox_Debug
 rule CXX_COMPILER__spdlog_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -158,7 +158,7 @@ rule CXX_STATIC_LIBRARY_LINKER__spdlog_Debug
 rule C_COMPILER__glad_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
+  command = /usr/bin/clang-10 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
   description = Building C object $out
 
 
@@ -177,7 +177,7 @@ rule C_STATIC_LIBRARY_LINKER__glad_Debug
 rule CXX_COMPILER__SandboxApp_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -185,7 +185,7 @@ rule CXX_COMPILER__SandboxApp_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__SandboxApp_Debug
-  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -196,7 +196,7 @@ rule CXX_EXECUTABLE_LINKER__SandboxApp_Debug
 rule CXX_COMPILER__Hazelnut_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/clang++-10  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -204,7 +204,7 @@ rule CXX_COMPILER__Hazelnut_Debug
 # Rule for linking CXX executable.
 
 rule CXX_EXECUTABLE_LINKER__Hazelnut_Debug
-  command = $PRE_LINK && /usr/bin/g++  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+  command = $PRE_LINK && /usr/bin/clang++-10  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 

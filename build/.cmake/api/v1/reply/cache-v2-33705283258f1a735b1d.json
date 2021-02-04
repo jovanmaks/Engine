@@ -199,7 +199,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/g++"
+			"value" : "/usr/bin/clang++-10"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -211,11 +211,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar"
+			"value" : "CMAKE_CXX_COMPILER_AR-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -227,11 +227,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib"
+			"value" : "CMAKE_CXX_COMPILER_RANLIB-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -327,7 +327,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc"
+			"value" : "/usr/bin/clang-10"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -339,11 +339,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "LLVM archiver"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar"
+			"value" : "CMAKE_C_COMPILER_AR-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -355,11 +355,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+					"value" : "Generate index for LLVM archive"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib"
+			"value" : "CMAKE_C_COMPILER_RANLIB-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
