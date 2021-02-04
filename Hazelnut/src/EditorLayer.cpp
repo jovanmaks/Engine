@@ -25,6 +25,7 @@ namespace Hazel {
 			m_CheckerboardTexture = Texture2D::Create("../../Hazelnut/assets/textures/Checkerboard.png");
 
 		FramebufferSpecification fbSpec;
+		fbSpec.Attachments = { FramebufferTextureFormat::RGBA8, FramebufferTextureFormat::Depth };
 		fbSpec.Width = 1280;
 		fbSpec.Height = 720;
 		m_Framebuffer = Framebuffer::Create(fbSpec);
@@ -326,59 +327,50 @@ namespace Hazel {
 
 	bool EditorLayer::OnKeyPressed(KeyPressedEvent& e)
 	{
-		// switch (e.GetKeyCode())
-		// {
+		// Shortcuts
+		if (e.GetRepeatCount() > 0)
+			return false;
 
+		bool control = Input::IsKeyPressed(Key::LeftControl) || Input::IsKeyPressed(Key::RightControl);
+		bool shift = Input::IsKeyPressed(Key::LeftShift) || Input::IsKeyPressed(Key::RightShift);
+		switch (e.GetKeyCode())
+		{
+			// case Key::N:
+			// {
+			// 	if (control)
+			// 		NewScene();
 
-		// // Shortcuts
-		// if (e.GetRepeatCount() > 0)
-		// 	return false;
-
-		// bool control = Input::IsKeyPressed(Key::LeftControl) || Input::IsKeyPressed(Key::RightControl);
-		// bool shift = Input::IsKeyPressed(Key::LeftShift) || Input::IsKeyPressed(Key::RightShift);
-		// switch (e.GetKeyCode())
-		// {
-		// 	case Key::N:
-		// 	{
-		// 		if (control)
-		// 			NewScene();
-
-		// 		break;
-		// 	}
-		// 	case Key::O:
-		// 	{
-		// 		if (control)
-		// 			OpenScene();
-
-		// 		break;
-		// 	}
-		// 	case Key::S:
-		// 	{
-		// 		if (control && shift)
-		// 			SaveSceneAs();
-
-		// 		break;
-		// 	}
-
-
-
-
-
-			// // Gizmos
-			// case Input::IsKeyPressed(HZ_KEY_Q):
-			// 	m_GizmoType = -1;
 			// 	break;
-			// case Input::IsKeyPressed(HZ_KEY_W):
-			// 	m_GizmoType = ImGuizmo::OPERATION::TRANSLATE;
-			// 	break;
-			// case Input::IsKeyPressed(HZ_KEY_E):
-			// 	m_GizmoType = ImGuizmo::OPERATION::ROTATE;
-			// 	break;
-			// case Input::IsKeyPressed(HZ_KEY_R):
-			// 	m_GizmoType = ImGuizmo::OPERATION::SCALE;
-			// 	break;
+			// }
+			// case Key::O:
+			// {
+			// 	if (control)
+			// 		OpenScene();
 
-		// }
+			// 	break;
+			// }
+			// case Key::S:
+			// {
+			// 	if (control && shift)
+			// 		SaveSceneAs();
+
+			// 	break;
+			// }
+
+			// Gizmos
+			case Key::Q:
+				m_GizmoType = -1;
+				break;
+			case Key::W:
+				m_GizmoType = ImGuizmo::OPERATION::TRANSLATE;
+				break;
+			case Key::E:
+				m_GizmoType = ImGuizmo::OPERATION::ROTATE;
+				break;
+			case Key::R:
+				m_GizmoType = ImGuizmo::OPERATION::SCALE;
+				break;
+		}
 
 
 
