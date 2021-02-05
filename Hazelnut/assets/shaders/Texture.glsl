@@ -139,4 +139,5 @@ void main() {
   }
   color = texColor;
   color2 = 50;
+  // color2 = vec4(1.0, 0.0, 0.0, 0.5);
 }
