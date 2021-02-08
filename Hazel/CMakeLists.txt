@@ -33,6 +33,10 @@ add_library(
     src/Hazel/Renderer/EditorCamera.cpp
     
 
+    ######################### MOJE ###################
+    src/Hazel/Renderer/World.cpp
+    ##################################################
+
 
 
     src/Hazel/Scene/Scene.cpp

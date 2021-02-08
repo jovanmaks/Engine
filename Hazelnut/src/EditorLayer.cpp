@@ -8,6 +8,7 @@
 #include "Hazel/Scene/SceneSerializer.h"
 
 #include "Hazel/Math/Math.h"
+#include <glad/glad.h>
 
 
 
@@ -34,11 +35,24 @@ namespace Hazel {
 
 		m_EditorCamera = EditorCamera(30.0f, 1.778f, 0.1f, 1000.0f);
 
-	#if 0
 
 		// Entity
-		auto square = m_ActiveScene->CreateEntity("Green Square");
-		square.AddComponent<SpriteRendererComponent>(glm::vec4{0.0f, 1.0f, 0.0f, 1.0f});
+
+		// grid.AddComponent<SpriteRendererComponent>(glm::vec4 {1.0f, 1.0f, 0.0f, 1.0f});
+		// for (int i = 0; i<5; i++)
+		// {
+		// }
+
+		auto grid2 = m_ActiveScene ->CreateEntity("Playground i");
+		grid2.AddComponent<SpriteRendererComponent>(  glm::vec3 { 0, 0, 0 }  );//u pozicije bi mogao da stavis brojac
+		
+		
+
+		
+	#if 0
+
+		auto square = m_ActiveScene->CreateEntity("Yelow Square");
+		square.AddComponent<SpriteRendererComponent>(glm::vec4{1.0f, 1.0f, 0.0f, 1.0f});
 
 		auto redSquare = m_ActiveScene->CreateEntity("Red Square");
 		redSquare.AddComponent<SpriteRendererComponent>(glm::vec4{ 1.0f, 0.0f, 0.0f, 1.0f });
@@ -123,7 +137,6 @@ namespace Hazel {
 			m_ActiveScene->OnViewportResize((uint32_t)m_ViewportSize.x, (uint32_t)m_ViewportSize.y);
 		}
 
-	
 
 
 		// Update
@@ -138,7 +151,9 @@ namespace Hazel {
 		RenderCommand::SetClearColor({ 0.1f, 0.1f, 0.1f, 1 });
 		RenderCommand::Clear();
 
-			// Clear our entity ID attachment to -1
+
+
+		// Clear our entity ID attachment to -1
 		m_Framebuffer->ClearAttachment(1, -1);
 
 		// Update scene
@@ -259,9 +274,13 @@ namespace Hazel {
 		ImGui::Text("Vertices: %d", stats.GetTotalVertexCount());
 		ImGui::Text("Indices: %d", stats.GetTotalIndexCount());
 
-		
 
 		ImGui::End();
+
+		ImGui::Begin("Grid");
+		ImGui::Checkbox("grid 15", &m_grid15);
+		ImGui::End();
+
 
 		ImGui::PushStyleVar(ImGuiStyleVar_WindowPadding, ImVec2{ 0, 0 });
 		ImGui::Begin("Viewport");

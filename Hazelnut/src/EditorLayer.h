@@ -51,6 +51,9 @@ namespace Hazel {
 
 		// Panels
 		SceneHierarchyPanel m_SceneHierarchyPanel;
+
+		bool m_grid15 = false;
+
 	};
 
 }

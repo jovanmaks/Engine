@@ -45,12 +45,22 @@ namespace Hazel {
 
 	struct SpriteRendererComponent
 	{
-		glm::vec4 Color{ 1.0f, 1.0f, 1.0f, 1.0f };
+		glm::vec4 Color	{ 1.0f, 1.0f, 1.0f, 1.0f };
+		glm::vec3 Location {10.0f, 10.0f, 1.0f};
+		int Count = 1;
 
 		SpriteRendererComponent() = default;
 		SpriteRendererComponent(const SpriteRendererComponent&) = default;
+
 		SpriteRendererComponent(const glm::vec4& color)
-			: Color(color) {}
+			: Color (color) {}
+
+		SpriteRendererComponent( const glm::vec3& location)
+			: Location ( location ) {}
+
+		SpriteRendererComponent(const int& count)
+			: Count(count) {}
+		
 	};
 
     struct CameraComponent

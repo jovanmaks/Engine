@@ -175,6 +175,12 @@
 
 {
   "directory": "/home/demijan/Projects/Engine/build",
+  "command": "/usr/bin/clang++-10  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Renderer/World.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/World.cpp",
+  "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Renderer/World.cpp"
+},
+
+{
+  "directory": "/home/demijan/Projects/Engine/build",
   "command": "/usr/bin/clang++-10  -DGLFW_INCLUDE_NONE -DSPDLOG_COMPILED_LIB -I../Hazel/src -I../Hazel/vendor/spdlog/include -I../Hazel/vendor/yaml-cpp/include -I../src -I../Hazel/vendor/glad/include  -g   -fPIC -std=gnu++17 -o Hazel/CMakeFiles/Hazel.dir/src/Hazel/Scene/Scene.cpp.o -c /home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp",
   "file": "/home/demijan/Projects/Engine/Hazel/src/Hazel/Scene/Scene.cpp"
 },

@@ -3,6 +3,7 @@
 
 #include "Components.h"
 #include "Hazel/Renderer/Renderer2D.h"
+#include "Hazel/Renderer/World.h"
 
 #include <glm/glm.hpp>
 
@@ -14,6 +15,7 @@ namespace Hazel {
 	
 	Scene::Scene()
 	{
+
 #if ENTT_EXAMPLE_CODE
 		entt::entity entity = m_Registry.create();
 		m_Registry.emplace<TransformComponent>(entity, glm::mat4(1.0f));
@@ -98,12 +100,18 @@ namespace Hazel {
 		{
 			Renderer2D::BeginScene(*mainCamera, cameraTransform);
 
+
 			auto group = m_Registry.group<TransformComponent>(entt::get<SpriteRendererComponent>);
 			for (auto entity : group)
 			{
 				auto [transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
 
-				Renderer2D::DrawQuad(transform.GetTransform(), sprite.Color);
+				// Renderer2D::DrawQuad(transform.GetTransform(), sprite.Color);
+				//  Renderer2D::DrawGrid(transform.GetTransform(), sprite.Color);
+
+
+
+				
 			}
 
 			Renderer2D::EndScene();
@@ -120,7 +128,25 @@ namespace Hazel {
 		{
 			auto [transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
 
-			Renderer2D::DrawQuad(transform.GetTransform(), sprite.Color);
+			// Renderer2D::DrawQuad(transform.GetTransform(), sprite.Color);
+			// Renderer2D::DrawGrid(transform.GetTransform(), sprite.Color);//treba ti quad koji uzima trasnform i poziciju
+			// Renderer2D::DrawGrid( transform.GetTransform(), sprite.Location, sprite.Color );//treba ti quad koji uzima trasnform i poziciju
+			Renderer2D::DrawGrid( transform.GetTransform(), sprite.Location, sprite.Color );//treba ti quad koji uzima trasnform i poziciju
+
+
+				// Renderer2D::DrawRotatedQuad({ 1.0f, 0.0f }, { 0.8f, 0.8f }, -45.0f, { 0.8f, 0.2f, 0.3f, 1.0f });
+				// for (float y = -5.0f; y < 5.0f; y += 0.5f)
+				// {
+				// 	for (float x = -5.0f; x < 5.0f; x += 0.5f)
+				// 	{
+				// 		// glm::vec4 color = { (x + 5.0f) / 10.0f, 0.4f, (y + 5.0f) / 10.0f, 0.7f };
+				// 	    glm::vec3  trr { 1.0f, 1.0f, 1.0f};						
+				// 		Renderer2D::DrawGrid( transform.GetTransform(), trr , sprite.Color );//treba ti quad koji uzima trasnform i poziciju
+
+				// 		// Renderer2D::DrawQuad({ x, y }, { 0.45f, 0.45f }, color);
+				// 	}
+				// }
+			
 		}
 
 		Renderer2D::EndScene();

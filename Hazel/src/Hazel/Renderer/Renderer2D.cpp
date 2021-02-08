@@ -217,6 +217,94 @@ namespace Hazel {
 		DrawQuad(transform, texture, tilingFactor);
 	}
 
+	void Renderer2D::DrawGrid(const glm::mat4& transform)
+	{
+		HZ_PROFILE_FUNCTION();
+
+		 size_t quadVertexCount = 4;
+
+		 	for (size_t i = 0; i < quadVertexCount; i++)
+		{
+			// s_Data.QuadVertexBufferPtr->Position = transform * s_Data.QuadVertexPositions[i];
+			s_Data.QuadVertexBufferPtr->Position =transform * s_Data.QuadVertexPositions[i];
+			s_Data.QuadVertexBufferPtr++;
+		}
+
+		s_Data.QuadIndexCount += 6;
+		s_Data.Stats.QuadCount++;
+
+	}
+
+
+    void Renderer2D::DrawGrid(const glm::mat4& transform, const glm::vec3& location, const glm::vec4 &color )
+	{
+		HZ_PROFILE_FUNCTION();
+
+		  size_t quadVertexCount = 4;
+
+			glm::vec4 testing[8];
+
+			glm::mat4 trr = glm::translate(glm::mat4(1.0f), location);
+
+			//hard-coded POZICIJE VERTEXA 
+			testing[0] = { -0.5f, -0.5f, 0.0f, 1.0f };
+			testing[1] = {  0.5f, -0.5f, 0.0f, 1.0f };
+			testing[2] = {  0.5f,  0.5f, 0.0f, 1.0f };
+			testing[3] = { -0.5f,  0.5f, 0.0f, 1.0f };
+
+			testing[4] = {  0.5f, -0.5f, 0.0f, 1.0f };
+			testing[5] = {  1.5f, -0.5f, 0.0f, 1.0f };
+			testing[6] = {  1.5f,  0.5f, 0.0f, 1.0f };
+			testing[7] = {  0.5f,  0.5f, 0.0f, 1.0f };
+
+
+		for (size_t i = 0; i < quadVertexCount; i++)
+		{
+			// s_Data.QuadVertexBufferPtr->Position = transform * s_Data.QuadVertexPositions[i];
+			s_Data.QuadVertexBufferPtr->Position =  trr * transform * s_Data.QuadVertexPositions[i];
+
+			s_Data.QuadVertexBufferPtr->Color = color;
+			s_Data.QuadVertexBufferPtr++;
+		}
+
+		s_Data.QuadIndexCount += 6;
+		s_Data.Stats.QuadCount++;
+	}
+
+	void Renderer2D::DrawGrid(const glm::mat4& transform, const glm::vec4 &color)
+	{
+		HZ_PROFILE_FUNCTION();
+
+		  size_t quadVertexCount = 8;
+
+			glm::vec4 testing[8];
+
+			//hard-coded POZICIJE VERTEXA 
+			testing[0] = { -0.5f, -0.5f, 0.0f, 1.0f };
+			testing[1] = {  0.5f, -0.5f, 0.0f, 1.0f };
+			testing[2] = {  0.5f,  0.5f, 0.0f, 1.0f };
+			testing[3] = { -0.5f,  0.5f, 0.0f, 1.0f };
+
+			testing[4] = {  0.5f, -0.5f, 0.0f, 1.0f };
+			testing[5] = {  1.5f, -0.5f, 0.0f, 1.0f };
+			testing[6] = {  1.5f,  0.5f, 0.0f, 1.0f };
+			testing[7] = {  0.5f,  0.5f, 0.0f, 1.0f };
+
+
+		for (size_t i = 0; i < quadVertexCount; i++)
+		{
+			// s_Data.QuadVertexBufferPtr->Position = transform * s_Data.QuadVertexPositions[i];
+			s_Data.QuadVertexBufferPtr->Position = transform * testing[i];
+
+			s_Data.QuadVertexBufferPtr->Color = color;
+			s_Data.QuadVertexBufferPtr++;
+		}
+
+		s_Data.QuadIndexCount += 6 * 2;
+		s_Data.Stats.QuadCount++;
+	}
+
+
 	void Renderer2D::DrawQuad(const glm::mat4& transform, const glm::vec4& color)
 	{
 		HZ_PROFILE_FUNCTION();
